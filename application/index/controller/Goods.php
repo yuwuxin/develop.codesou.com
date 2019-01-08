@@ -25,4 +25,8 @@ class Goods extends Frontend
     public function index(){
         return $this->view->fetch('list');
     }
+
+    public function detail(){
+        return $this->view->fetch();
+    }
 }

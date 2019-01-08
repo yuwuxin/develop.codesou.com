@@ -7,33 +7,9 @@
     <meta name="keywords" content="行业资讯,建站资讯,IT资讯"/>
     <meta name="MSSmartTagsPreventParsing" content="True"/>
     <meta http-equiv="MSThemeCompatible" content="Yes"/>
-    <link rel="stylesheet" type="text/css" href="__STATIC__/css/style_2_common.css"/>
-    <link rel="stylesheet" type="text/css" href="__STATIC__/css/style_2_portal_list.css"/>
-    <script src="static/js/common.js" type="text/javascript"></script>
-    <script src="static/js/portal.js" type="text/javascript"></script>
-    <script type="text/javascript" src='static/js/jquery-1.8.3.min.js'></script>
-    <script type="text/javascript">
-        var jq = jQuery.noConflict();
-    </script>
-    <link rel="stylesheet" type="text/css" href="static/css/animate.min.css">
-    <script src="static/js/jquery.pagnation.js" type="text/javascript"></script>
-    <script src="static/js/jquery.superslide.2.1.1.js" type="text/javascript"></script>
-    <script src="static/js/jquery.flexslider-min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        jQuery(document).ready(function () {
-            jQuery('.flexslider').flexslider({
-                directionNav: true,
-                pauseOnAction: false
-            });
-        });
-    </script>
-    <script language="javascript" type="text/javascript">
-        function killErrors() {
-            return true;
-        }
-
-        window.onerror = killErrors;
-    </script>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/list.css"/>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/animate.min.css">
 </head>
 {include file="common/header" /}
 <div id="wp" class="wp">
@@ -44,56 +20,33 @@
             <a href="http://www.codesou.com/portal.php">首页</a> <em>&rsaquo;</em>行业资讯
         </div>
     </div>
-    <style id="diy_style" type="text/css"></style>
-
-    <div class="wp">
-        <!--[diy=diy1]-->
-        <div id="diy1" class="area"></div><!--[/diy]-->
-    </div>
 
     <div id="ct" class="ct2 wp cl" style="width:1180px!important; margin:0px auto!important;">
         <div class="mn">
             <div class="deanwzadsd">
-                <!--[diy=deanwzadsd]-->
-                <div id="deanwzadsd" class="area">
-                    <div id="framelZW0O5" class="frame move-span cl frame-1">
-                        <div id="framelZW0O5_left" class="column frame-1-c">
-                            <div id="framelZW0O5_left_temp" class="move-span temp"></div>
-                            <div id="portal_block_132" class="block move-span">
-                                <div id="portal_block_132_content" class="dxb_bc">
-                                    <div class="portal_block_summary"><a href="#" target="_blank">
-                                        <img src="static/picture/ads.jpg"/>
-                                    </a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--[/diy]-->
-
+                <div class="area">
+                    <img src="static/picture/ads.jpg"/>
+                </div>
             </div>
             <div class="deanmn_left">
                 <div class="deanwzpdtitle">
                     <h4>行业资讯</h4>
                     <div class="deantools">
-
                         <a href="http://www.codesou.com/portal.php?mod=rss&amp;catid=3" class="deanrssartice"
                            target="_blank" title="RSS">RSS</a></div>
                     <div class="clear"></div>
                 </div>
-                <!--下家分类-->
-
                 <div class="clear"></div>
 
-                <!--[diy=listloopbottom]-->
                 <div id="listloopbottom" class="area"></div><!--[/diy]-->
                 <div class="clear"></div>
                 <div class="deanartice">
                     <ul>
+                        {volist name='list' id='vo'}
                         <li>
                             <div class="deanarticer_tl">
                                 <div class="deanattltop">
-                                    <a href="http://www.codesou.com/article-1893-1.html" target="_blank"
-                                       class="deanarttitles xi2" style="">网站被百度降权了怎么办？</a>
+                                    <a href="article-{$vo.id}.html" target="_blank" class="deanarttitles xi2">{$vo.title}</a>
                                     <div class="clear"></div>
                                 </div>
                                 <div class="deanarticersummary">
@@ -120,493 +73,13 @@
                                 <div class="clear"></div>
                             </div>
                         </li>
-
-                        <li>
-                            <div class="deanarticer_tl">
-                                <div class="deanattltop">
-                                    <a href="http://www.codesou.com/article-1892-1.html" target="_blank"
-                                       class="deanarttitles xi2" style="">网站优化逾越竞争对手的焦点因素</a>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="deanarticersummary">
-                                    　　网站的优化竞争越来越大，天天都有着越来越多的网站产生，随时对我们造成威胁，我们也天天都想逾越比我们更强的竞争对手，那么我们怎样可以或许更好的逾越我们的竞争对手呢?我想这个是每位站长朋侪思索的焦点因
-                                    ...&hellip;&hellip;
-                                </div>
-                                <div class="deanatcertop">
-                                    <div class="deanatctl">
-                                        <img src="static/picture/avatar.php">
-                                    </div>
-                                    <div class="deanarticerinfo">
-                                        <span class="deanzhuozhenm">
-                                            作者：18507625576                                        </span>
-                                        <em>|</em>
-                                        <span class="deanfabushijian">时间：2018-12-4 13:05</span>
-                                        <em>|</em>
-                                        <span class="deanyuedushu">阅读：1650</span>
-                                        <em>|</em>
-                                        <span class="deanhuifushu">回复：0</span>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="deanarticel">
-                                <a href="http://www.codesou.com/article-1891-1.html" target="_blank"><img
-                                        src="static/picture/125023lujo55ijjpvqsn6k.png.thumb.jpg"
-                                        alt="以国表里着名网站为例 关于网站分页导航的一些思索" width="250" height="150"/></a><em></em>
-                            </div>
-                            <div class="deanarticer">
-                                <div class="deanarticername">
-                                </div>
-                                <h5><a href="http://www.codesou.com/article-1891-1.html" target="_blank"
-                                       class="deanarttitles xi2" style="">以国表里着名网站为例 关于网站分页导航的一些思索</a></h5>
-                                <div class="deanarticersummary">
-                                    　　关于分页导航，看似简朴的计划背后有一些什么样的逻辑?　　编辑注记：　　这篇文章是我们的读者Weiyangliang对网站分页导航计划的一些思索，分析了网站分页导航计划上的一些想法和思绪。　　在欣赏网页时，常常
-                                    ...&hellip;&hellip;
-                                </div>
-                                <div class="deanatcertop">
-                                    <div class="deanatctl">
-                                        <img src="static/picture/avatar.php">
-                                    </div>
-                                    <div class="deanarticerinfo">
-                                        <span class="deanzhuozhenm">
-                                            作者：高新区合租                                        </span>
-                                        <em>|</em>
-                                        <span class="deanfabushijian">时间：2018-12-4 12:50</span>
-                                        <em>|</em>
-                                        <span class="deanyuedushu">阅读：1480</span>
-                                        <em>|</em>
-                                        <span class="deanhuifushu">回复：0</span>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="clear"></div>
-
-                        </li>
-
-                        <li>
-                            <div class="deanarticer_tl">
-                                <div class="deanattltop">
-                                    <a href="http://www.codesou.com/article-1890-1.html" target="_blank"
-                                       class="deanarttitles xi2" style="">通过百度流量和索引量判定网站权重状态</a>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="deanarticersummary">
-                                    　　2013年2月19日百度发布萝卜算法公告，究竟上百度在2月10-12日就开始大规模更新了，也就是大年初二开始更新。那天我的站流量从2万降到5000，收录制止增长，而同样利用我们体系的站长当中凌驾80%都表现流量大幅度
-                                    ...&hellip;&hellip;
-                                </div>
-                                <div class="deanatcertop">
-                                    <div class="deanatctl">
-                                        <img src="static/picture/avatar.php">
-                                    </div>
-                                    <div class="deanarticerinfo">
-                                        <span class="deanzhuozhenm">
-                                            作者：楚哥是大神                                        </span>
-                                        <em>|</em>
-                                        <span class="deanfabushijian">时间：2018-12-4 12:40</span>
-                                        <em>|</em>
-                                        <span class="deanyuedushu">阅读：3960</span>
-                                        <em>|</em>
-                                        <span class="deanhuifushu">回复：0</span>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="deanarticer_tl">
-                                <div class="deanattltop">
-                                    <a href="http://www.codesou.com/article-1889-1.html" target="_blank"
-                                       class="deanarttitles xi2" style="">网站布局是怎样影响网站收录的</a>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="deanarticersummary">
-                                    　　影响网站收录的的因素上一节给各人讲了。但是这些因素有一些我们是欠好去控制的，也是急不来的。但是网站布局在我们建立网站之初就应该规划好。网站布局是怎样影响网站收录的呢?　　1.flash链接倒霉于蜘蛛抓取页
-                                    ...&hellip;&hellip;
-                                </div>
-                                <div class="deanatcertop">
-                                    <div class="deanatctl">
-                                        <img src="static/picture/avatar.php">
-                                    </div>
-                                    <div class="deanarticerinfo">
-                                        <span class="deanzhuozhenm">
-                                            作者：河源404                                        </span>
-                                        <em>|</em>
-                                        <span class="deanfabushijian">时间：2018-12-4 12:30</span>
-                                        <em>|</em>
-                                        <span class="deanyuedushu">阅读：3673</span>
-                                        <em>|</em>
-                                        <span class="deanhuifushu">回复：0</span>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="deanarticel">
-                                <a href="http://www.codesou.com/article-1888-1.html" target="_blank"><img
-                                        src="static/picture/122003ogqz7tqnqtzgd2e1.jpg.thumb.jpg"
-                                        alt="百度站长平台网站logo考核示例以及个人总结" width="250" height="150"/></a><em></em>
-                            </div>
-                            <div class="deanarticer">
-                                <div class="deanarticername">
-                                </div>
-                                <h5><a href="http://www.codesou.com/article-1888-1.html" target="_blank"
-                                       class="deanarttitles xi2" style="">百度站长平台网站logo考核示例以及个人总结</a></h5>
-                                <div class="deanarticersummary">
-                                    　　对许多做SEO的人来说，百度站长社区，是再认识不外的了，许多的站长在这内里，交换学习，固然我不是去替百度宣扬，百度也有许多我不喜好的地方，在这里我就不为各人先容了，照旧回到文章话题，百度站长社区网站l
-                                    ...&hellip;&hellip;
-                                </div>
-                                <div class="deanatcertop">
-                                    <div class="deanatctl">
-                                        <img src="static/picture/avatar.php">
-                                    </div>
-                                    <div class="deanarticerinfo">
-                                        <span class="deanzhuozhenm">
-                                            作者：845612778                                        </span>
-                                        <em>|</em>
-                                        <span class="deanfabushijian">时间：2018-12-4 12:20</span>
-                                        <em>|</em>
-                                        <span class="deanyuedushu">阅读：128</span>
-                                        <em>|</em>
-                                        <span class="deanhuifushu">回复：0</span>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="clear"></div>
-
-                        </li>
-
-                        <li>
-                            <div class="deanarticer_tl">
-                                <div class="deanattltop">
-                                    <a href="http://www.codesou.com/article-1887-1.html" target="_blank"
-                                       class="deanarttitles xi2" style="">浅谈网站推广要做哪些细节工作？</a>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="deanarticersummary">
-                                    　　第一：选择新站空间。网站没上线前就要开始思量网站必要什么样的空间，在服务器上测试网站的访问速率，空间的稳固性，雷同服务器上的站点是否稳固，不是独立IP的主秘密检察雷同IP站点有没有作弊举动，有没有被搜
-                                    ...&hellip;&hellip;
-                                </div>
-                                <div class="deanatcertop">
-                                    <div class="deanatctl">
-                                        <img src="static/picture/avatar.php">
-                                    </div>
-                                    <div class="deanarticerinfo">
-                                        <span class="deanzhuozhenm">
-                                            作者：那一方                                        </span>
-                                        <em>|</em>
-                                        <span class="deanfabushijian">时间：2018-12-4 12:05</span>
-                                        <em>|</em>
-                                        <span class="deanyuedushu">阅读：4201</span>
-                                        <em>|</em>
-                                        <span class="deanhuifushu">回复：0</span>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="deanarticer_tl">
-                                <div class="deanattltop">
-                                    <a href="http://www.codesou.com/article-1886-1.html" target="_blank"
-                                       class="deanarttitles xi2" style="">用户必要怎样的网站计划</a>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="deanarticersummary">
-                                    　　用户是网站运营的焦点体系，随着各大搜刮引擎对算法的严酷要求，seo优化的竞争力也渐渐增大，要想克服竞争对手，网站的站内计划也成为竞争的焦点气力。用户到底必要什么样的站点，怎样的站点计划才气满意用户的
-                                    ...&hellip;&hellip;
-                                </div>
-                                <div class="deanatcertop">
-                                    <div class="deanatctl">
-                                        <img src="static/picture/avatar.php">
-                                    </div>
-                                    <div class="deanarticerinfo">
-                                        <span class="deanzhuozhenm">
-                                            作者：42181755                                        </span>
-                                        <em>|</em>
-                                        <span class="deanfabushijian">时间：2018-12-4 11:50</span>
-                                        <em>|</em>
-                                        <span class="deanyuedushu">阅读：5211</span>
-                                        <em>|</em>
-                                        <span class="deanhuifushu">回复：0</span>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="deanarticer_tl">
-                                <div class="deanattltop">
-                                    <a href="http://www.codesou.com/article-1885-1.html" target="_blank"
-                                       class="deanarttitles xi2" style="">怎样让网站流量不流失</a>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="deanarticersummary">
-                                    　　从事网站工作的朋侪们都知道，网站由于某些缘故原由必要重新建立，这顾名思义会给网站的访问造成肯定的影响。怎样让前期辛劳带来的稳固流量不流失?这就必要网站重定向本领了，下面一起来学学吧!301重定向不但能
-                                    ...&hellip;&hellip;
-                                </div>
-                                <div class="deanatcertop">
-                                    <div class="deanatctl">
-                                        <img src="static/picture/avatar.php">
-                                    </div>
-                                    <div class="deanarticerinfo">
-                                        <span class="deanzhuozhenm">
-                                            作者：liusy7180                                        </span>
-                                        <em>|</em>
-                                        <span class="deanfabushijian">时间：2018-12-4 11:35</span>
-                                        <em>|</em>
-                                        <span class="deanyuedushu">阅读：3650</span>
-                                        <em>|</em>
-                                        <span class="deanhuifushu">回复：0</span>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="deanarticer_tl">
-                                <div class="deanattltop">
-                                    <a href="http://www.codesou.com/article-1884-1.html" target="_blank"
-                                       class="deanarttitles xi2" style="">怎么让百度快速收录网站文章</a>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="deanarticersummary">
-                                    　　在许多新手的站长看来网站的收录很难，特殊是新手开始做第一个网站的时间，感觉收录特殊的难;在我是新手的时间也是感觉收录也特殊难，在我第一个网站被收录的时间我高兴的不得了，哎呀，当时候感觉就能挣钱了，
-                                    ...&hellip;&hellip;
-                                </div>
-                                <div class="deanatcertop">
-                                    <div class="deanatctl">
-                                        <img src="static/picture/avatar.php">
-                                    </div>
-                                    <div class="deanarticerinfo">
-                                        <span class="deanzhuozhenm">
-                                            作者：qq574                                        </span>
-                                        <em>|</em>
-                                        <span class="deanfabushijian">时间：2018-12-4 11:20</span>
-                                        <em>|</em>
-                                        <span class="deanyuedushu">阅读：3166</span>
-                                        <em>|</em>
-                                        <span class="deanhuifushu">回复：0</span>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="deanarticer_tl">
-                                <div class="deanattltop">
-                                    <a href="http://www.codesou.com/article-1883-1.html" target="_blank"
-                                       class="deanarttitles xi2" style="">“蜜罐”域名miguan.com/.cn相继被秒将来将建站？</a>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="deanarticersummary">
-                                    　企业怎么做品牌推广好推宝助力品牌提拔着名度　　继域名jiaoxue.com、dacong.com分别以65.5万元结拍、22万元的代价被秒后，小编得知，又有两枚双拼域名被秒的消息：域名miguan.com、miguan.cn分别以一口价98000元
-                                    ...&hellip;&hellip;
-                                </div>
-                                <div class="deanatcertop">
-                                    <div class="deanatctl">
-                                        <img src="static/picture/avatar.php">
-                                    </div>
-                                    <div class="deanarticerinfo">
-                                        <span class="deanzhuozhenm">
-                                            作者：sdgdg                                        </span>
-                                        <em>|</em>
-                                        <span class="deanfabushijian">时间：2018-12-4 11:05</span>
-                                        <em>|</em>
-                                        <span class="deanyuedushu">阅读：216</span>
-                                        <em>|</em>
-                                        <span class="deanhuifushu">回复：0</span>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="deanarticer_tl">
-                                <div class="deanattltop">
-                                    <a href="http://www.codesou.com/article-1882-1.html" target="_blank"
-                                       class="deanarttitles xi2" style="">好站保举：必盛互联一站式建站服务贩卖平台</a>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="deanarticersummary">
-                                    　　网站名称：必盛互联　　网站网址：http://www.bisend.cn/　　网站简介：　　 　　必盛互联(bisend.cn)建立于2016年，是一个一体化建站服务贩卖平台，针对中小企业客户和个人站长提供建站所需的全部服务，致力于
-                                    ...&hellip;&hellip;
-                                </div>
-                                <div class="deanatcertop">
-                                    <div class="deanatctl">
-                                        <img src="static/picture/avatar.php">
-                                    </div>
-                                    <div class="deanarticerinfo">
-                                        <span class="deanzhuozhenm">
-                                            作者：那一方                                        </span>
-                                        <em>|</em>
-                                        <span class="deanfabushijian">时间：2018-12-4 10:50</span>
-                                        <em>|</em>
-                                        <span class="deanyuedushu">阅读：97</span>
-                                        <em>|</em>
-                                        <span class="deanhuifushu">回复：0</span>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="deanarticel">
-                                <a href="http://www.codesou.com/article-1881-1.html" target="_blank"><img
-                                        src="static/picture/103606m48ln6jyv7ci9bq3.jpg.thumb.jpg"
-                                        alt="三沙市委书记确认：将在南海黄岩岛上建情况监测站" width="250" height="150"/></a><em></em>
-                            </div>
-                            <div class="deanarticer">
-                                <div class="deanarticername">
-                                </div>
-                                <h5><a href="http://www.codesou.com/article-1881-1.html" target="_blank"
-                                       class="deanarttitles xi2" style="">三沙市委书记确认：将在南海黄岩岛上建情况监测站</a></h5>
-                                <div class="deanarticersummary">
-                                    　　“三沙设市快5年了，可以用‘五彩三沙’来概括这些年的三沙发展，这5种颜色分别是‘红、黑、绿、蓝、白’。赤色是祖宗海上国旗、党旗高高飘荡；玄色是三沙人费力创业精力的象征；绿色是三沙敢叫荒岛变绿洲的举措
-                                    ...&hellip;&hellip;
-                                </div>
-                                <div class="deanatcertop">
-                                    <div class="deanatctl">
-                                        <img src="static/picture/avatar.php">
-                                    </div>
-                                    <div class="deanarticerinfo">
-                                        <span class="deanzhuozhenm">
-                                            作者：浪人@                                        </span>
-                                        <em>|</em>
-                                        <span class="deanfabushijian">时间：2018-12-4 10:36</span>
-                                        <em>|</em>
-                                        <span class="deanyuedushu">阅读：68</span>
-                                        <em>|</em>
-                                        <span class="deanhuifushu">回复：0</span>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="clear"></div>
-
-                        </li>
-
-                        <li>
-                            <div class="deanarticel">
-                                <a href="http://www.codesou.com/article-1880-1.html" target="_blank"><img
-                                        src="static/picture/102052f45ve4p4q5obvl5q.jpg.thumb.jpg"
-                                        alt="中国为何要建第五个南极观察站？专家做出解答" width="250" height="150"/></a><em></em>
-                            </div>
-                            <div class="deanarticer">
-                                <div class="deanarticername">
-                                </div>
-                                <h5><a href="http://www.codesou.com/article-1880-1.html" target="_blank"
-                                       class="deanarttitles xi2" style="">中国为何要建第五个南极观察站？专家做出解答</a></h5>
-                                <div class="deanarticersummary">
-                                    　　我国为何要建第五个南极观察站　　　我国第34次南极科考队于11月8日从上海搭乘“雪龙”号前去南极，本次观察将启动第五个南极观察站建立前期工作。　　本报记者陈瑜　　“告别的味道是如许悲凉，内心有一万个不
-                                    ...&hellip;&hellip;
-                                </div>
-                                <div class="deanatcertop">
-                                    <div class="deanatctl">
-                                        <img src="static/picture/avatar.php">
-                                    </div>
-                                    <div class="deanarticerinfo">
-                                        <span class="deanzhuozhenm">
-                                            作者：浪人@                                        </span>
-                                        <em>|</em>
-                                        <span class="deanfabushijian">时间：2018-12-4 10:20</span>
-                                        <em>|</em>
-                                        <span class="deanyuedushu">阅读：70</span>
-                                        <em>|</em>
-                                        <span class="deanhuifushu">回复：0</span>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="clear"></div>
-
-                        </li>
-
-                        <li>
-                            <div class="deanarticer_tl">
-                                <div class="deanattltop">
-                                    <a href="http://www.codesou.com/article-1879-1.html" target="_blank"
-                                       class="deanarttitles xi2" style="">周总结：极品大米生意业务不停多枚域名被建站</a>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="deanarticersummary">
-                                    　　转眼间又到了周五，意味着又到了每周回首米市动态的时间。本周米市可谓是热闹不停，无论是国内照旧国外，均有大米成交的环境，乃至传出不少好米纷纷启用建站的消息。下面一起来回首一下吧！　　国内域名生意业务
-                                    ...&hellip;&hellip;
-                                </div>
-                                <div class="deanatcertop">
-                                    <div class="deanatctl">
-                                        <img src="static/picture/avatar.php">
-                                    </div>
-                                    <div class="deanarticerinfo">
-                                        <span class="deanzhuozhenm">
-                                            作者：菜~                                        </span>
-                                        <em>|</em>
-                                        <span class="deanfabushijian">时间：2018-12-4 10:10</span>
-                                        <em>|</em>
-                                        <span class="deanyuedushu">阅读：198</span>
-                                        <em>|</em>
-                                        <span class="deanhuifushu">回复：0</span>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </li>
-
+                        {/volist}
                     </ul>
                 </div>
                 <div class="clear"></div>
                 <div class="pgs cl" id="deanpage">
                     <div class="pg"><strong>1</strong><a
                             href="http://www.codesou.com/portal.php?mod=list&catid=3&amp;page=2">2</a><a
-                            href="http://www.codesou.com/portal.php?mod=list&catid=3&amp;page=3">3</a><a
-                            href="http://www.codesou.com/portal.php?mod=list&catid=3&amp;page=4">4</a><a
-                            href="http://www.codesou.com/portal.php?mod=list&catid=3&amp;page=5">5</a><a
-                            href="http://www.codesou.com/portal.php?mod=list&catid=3&amp;page=6">6</a><a
-                            href="http://www.codesou.com/portal.php?mod=list&catid=3&amp;page=7">7</a><a
-                            href="http://www.codesou.com/portal.php?mod=list&catid=3&amp;page=8">8</a><a
-                            href="http://www.codesou.com/portal.php?mod=list&catid=3&amp;page=9">9</a><a
-                            href="http://www.codesou.com/portal.php?mod=list&catid=3&amp;page=10">10</a><a
                             href="http://www.codesou.com/portal.php?mod=list&catid=3&amp;page=120" class="last">...
                         120</a><label><input type="text" name="custompage" class="px" size="2" title="输入页码，按回车快速跳转"
                                              value="1"
@@ -620,298 +93,39 @@
             </div>
         </div>
         <div class="sd pph">
-            <!--关注我们-->
             <div class="deanguanzhu">
-                <!--[diy=deanguanzhu]-->
-                <div id="deanguanzhu" class="area">
-                    <div id="frameHC3Ba7" class="frame move-span cl frame-1">
-                        <div id="frameHC3Ba7_left" class="column frame-1-c">
-                            <div id="frameHC3Ba7_left_temp" class="move-span temp"></div>
-                            <div id="portal_block_129" class="block move-span">
-                                <div id="portal_block_129_content" class="dxb_bc">
-                                    <div class="portal_block_summary"><a href="#" target="_blanks"><img
-                                            src="static/picture/guanzhu.jpg"></a>
-                                        <div class="deangzbox">
-                                            <div class="deangzewm"><img src="static/picture/app_qrcode.jpg"></div>
-                                            <div class="deangzret">
-                                                <h3>源码搜论坛交流群</h3>
-                                                <div class="dean_des">
-                                                    <i class="decorate-top-left"></i>
-                                                    <i class="decorate-top-right"></i>
-                                                    <i class="decorate-bottom-left"></i>
-                                                    <i class="decorate-bottom-right"></i>
-                                                    <p>扫码参与交流<br>给你想要与成长</p>
-                                                </div>
-                                            </div>
-                                            <div class="clear"></div>
-                                            <div class="deangzlists">
-                                                <a href="#" target="_blank" class="deansina">
-                                                    <span class="deansinaicon"></span>
-                                                    <span class="deansinatxt">关注官方微博</span>
-                                                    <div class="clear"></div>
-                                                </a>
-                                                <a href="#" target="_blank" class="deanqqqun">
-                                                    <span class="deanqqqunicon"></span>
-                                                    <span class="deanqqquntxt">加入官方Q群</span>
-                                                    <div class="clear"></div>
-                                                </a>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                <div class="area">
+                    <div class="portal_block_summary">
+                        <a href="#" target="_blanks"> <img src="static/picture/guanzhu.jpg"></a>
+                        <div class="deangzbox">
+                            <div class="deangzewm"><img src="static/picture/app_qrcode.jpg"></div>
+                            <div class="deangzret">
+                                <h3>源码搜论坛交流群</h3>
+                                <div class="dean_des">
+                                    <i class="decorate-top-left"></i>
+                                    <i class="decorate-top-right"></i>
+                                    <i class="decorate-bottom-left"></i>
+                                    <i class="decorate-bottom-right"></i>
+                                    <p>扫码参与交流<br>给你想要与成长</p>
                                 </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="deangzlists">
+                                <a href="#" target="_blank" class="deansina">
+                                    <span class="deansinaicon"></span>
+                                    <span class="deansinatxt">关注官方微博</span>
+                                    <div class="clear"></div>
+                                </a>
+                                <a href="#" target="_blank" class="deanqqqun">
+                                    <span class="deanqqqunicon"></span>
+                                    <span class="deanqqquntxt">加入官方Q群</span>
+                                    <div class="clear"></div>
+                                </a>
+                                <div class="clear"></div>
                             </div>
                         </div>
                     </div>
-                </div><!--[/diy]-->
-            </div>
-            <!-- 滚动资讯 -->
-            <div class="deansidebox">
-                <div class="deanpubtitle">
-                    <h4>滚动资讯</h4>
-                    <div class="deanpbright">
-                        <a href="#" target="_blank">更多</a>
-                    </div>
-                    <div class="clear"></div>
                 </div>
-                <div class="focusBox">
-                    <!--[diy=focusBox]-->
-                    <div id="focusBox" class="area">
-                        <div id="frameP4j4Hk" class="frame move-span cl frame-1">
-                            <div id="frameP4j4Hk_left" class="column frame-1-c">
-                                <div id="frameP4j4Hk_left_temp" class="move-span temp"></div>
-                                <div id="portal_block_124" class="block move-span">
-                                    <div id="portal_block_124_content" class="dxb_bc">
-                                        <ul class="pic">
-                                            <li>
-                                                <div class="deanfocuspic">
-                                                    <a href="http://www.codesou.com/article-1891-1.html"
-                                                       target="_blank"><img
-                                                            src="static/picture/eb7c1c0cb4f677c8ea61e6618bca6e7c.jpg"
-                                                            width="270" height="168"/></a>
-                                                </div>
-                                                <div class="deanfocusbox">
-                                                    <h5><a href="http://www.codesou.com/article-1891-1.html"
-                                                           target="_blank">以国表里着名网站为例 关于网</a></h5>
-                                                    <p>　　关于分页导航，看似简朴的计划背后有一些什么样的逻辑?　　...<a
-                                                            href="http://www.codesou.com/article-1891-1.html"
-                                                            target="_blank">详情</a></p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="deanfocuspic">
-                                                    <a href="http://www.codesou.com/article-1888-1.html"
-                                                       target="_blank"><img
-                                                            src="static/picture/48afac1636096b323c7e904d1a5993ad.jpg"
-                                                            width="270" height="168"/></a>
-                                                </div>
-                                                <div class="deanfocusbox">
-                                                    <h5><a href="http://www.codesou.com/article-1888-1.html"
-                                                           target="_blank">百度站长平台网站logo考核示例</a></h5>
-                                                    <p>　　对许多做SEO的人来说，百度站长社区，是再认识不外的了，许...<a
-                                                            href="http://www.codesou.com/article-1888-1.html"
-                                                            target="_blank">详情</a></p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="deanfocuspic">
-                                                    <a href="http://www.codesou.com/article-1881-1.html"
-                                                       target="_blank"><img
-                                                            src="static/picture/e5553326652a19fadd0c893326f2356d.jpg"
-                                                            width="270" height="168"/></a>
-                                                </div>
-                                                <div class="deanfocusbox">
-                                                    <h5><a href="http://www.codesou.com/article-1881-1.html"
-                                                           target="_blank">三沙市委书记确认：将在南海黄</a></h5>
-                                                    <p>　　“三沙设市快5年了，可以用‘五彩三沙’来概括这些年的三沙...<a
-                                                            href="http://www.codesou.com/article-1881-1.html"
-                                                            target="_blank">详情</a></p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="deanfocuspic">
-                                                    <a href="http://www.codesou.com/article-1880-1.html"
-                                                       target="_blank"><img
-                                                            src="static/picture/17fa155734be11157660729876e81c58.jpg"
-                                                            width="270" height="168"/></a>
-                                                </div>
-                                                <div class="deanfocusbox">
-                                                    <h5><a href="http://www.codesou.com/article-1880-1.html"
-                                                           target="_blank">中国为何要建第五个南极观察站</a></h5>
-                                                    <p>　　我国为何要建第五个南极观察站　　　我国第34次南极科考队于...<a
-                                                            href="http://www.codesou.com/article-1880-1.html"
-                                                            target="_blank">详情</a></p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="deanfocuspic">
-                                                    <a href="http://www.codesou.com/article-1860-1.html"
-                                                       target="_blank"><img
-                                                            src="static/picture/1d75e545e2e835073eb8e2af1c0787a0.jpg"
-                                                            width="270" height="168"/></a>
-                                                </div>
-                                                <div class="deanfocusbox">
-                                                    <h5><a href="http://www.codesou.com/article-1860-1.html"
-                                                           target="_blank">剖析百度蜘蛛怎样抓取网站和进</a></h5>
-                                                    <p>　　做SEO的小同伴对百度搜刮引擎和蜘蛛是情有独钟啊，由于现在...<a
-                                                            href="http://www.codesou.com/article-1860-1.html"
-                                                            target="_blank">详情</a></p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="deanfocuspic">
-                                                    <a href="http://www.codesou.com/article-1856-1.html"
-                                                       target="_blank"><img
-                                                            src="static/picture/fae27ed62c85ac0ab9e0538f1ffefc92.jpg"
-                                                            width="270" height="168"/></a>
-                                                </div>
-                                                <div class="deanfocusbox">
-                                                    <h5><a href="http://www.codesou.com/article-1856-1.html"
-                                                           target="_blank">网站关键词排名切忌盲目寻求第</a></h5>
-                                                    <p>　　我想每个做SEO的同仁都和笔者一样天天都在思考怎样才气让本...<a
-                                                            href="http://www.codesou.com/article-1856-1.html"
-                                                            target="_blank">详情</a></p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--[/diy]-->
-                    <a class="prev" href="javascript:void(0)"><</a>
-                    <a class="next" href="javascript:void(0)">></a>
-                    <ul class="hd">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <script type="text/javascript">
-                    jQuery(".focusBox").slide({mainCell: ".pic", effect: "left", autoPlay: true, delayTime: 300});
-                </script>
-            </div>
-
-            <!-- 精选资讯 -->
-            <div class="deansidebox">
-                <div class="deangltt">
-                    <!--[diy=deangltt2]-->
-                    <div id="deangltt2" class="area">
-                        <div id="frameCUIdd1" class="frame move-span cl frame-1">
-                            <div id="frameCUIdd1_left" class="column frame-1-c">
-                                <div id="frameCUIdd1_left_temp" class="move-span temp"></div>
-                                <div id="portal_block_125" class="block move-span">
-                                    <div id="portal_block_125_content" class="dxb_bc"><em>行业资讯</em>
-                                        <a href="http://www.codesou.com/article-1893-1.html" title="网站被百度降权了怎么办？"
-                                           target="_blank">网站被百度降权了怎么办？</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--[/diy]-->
-                    <div class="clear"></div>
-                </div>
-                <div class="deangllists">
-                    <ul>
-                        <!--[diy=deangllists]-->
-                        <div id="deangllists" class="area">
-                            <div id="framep25koo" class="frame move-span cl frame-1">
-                                <div id="framep25koo_left" class="column frame-1-c">
-                                    <div id="framep25koo_left_temp" class="move-span temp"></div>
-                                    <div id="portal_block_126" class="block move-span">
-                                        <div id="portal_block_126_content" class="dxb_bc">
-                                            <li><em></em><a href="http://www.codesou.com/article-1893-1.html"
-                                                            target="_blank" title="网站被百度降权了怎么办？">网站被百度降权了怎么办？</a></li>
-                                            <li><em></em><a href="http://www.codesou.com/article-1892-1.html"
-                                                            target="_blank" title="网站优化逾越竞争对手的焦点因素">网站优化逾越竞争对手的焦点因素</a>
-                                            </li>
-                                            <li><em></em><a href="http://www.codesou.com/article-1891-1.html"
-                                                            target="_blank" title="以国表里着名网站为例 关于网站分页导航的一些思索">以国表里着名网站为例
-                                                关于网站分页导航的</a></li>
-                                            <li><em></em><a href="http://www.codesou.com/article-1890-1.html"
-                                                            target="_blank" title="通过百度流量和索引量判定网站权重状态">通过百度流量和索引量判定网站权重状态</a>
-                                            </li>
-                                            <li><em></em><a href="http://www.codesou.com/article-1889-1.html"
-                                                            target="_blank" title="网站布局是怎样影响网站收录的">网站布局是怎样影响网站收录的</a>
-                                            </li>
-                                            <li><em></em><a href="http://www.codesou.com/article-1888-1.html"
-                                                            target="_blank" title="百度站长平台网站logo考核示例以及个人总结">百度站长平台网站logo考核示例以及个人总结</a>
-                                            </li>
-                                            <li><em></em><a href="http://www.codesou.com/article-1887-1.html"
-                                                            target="_blank" title="浅谈网站推广要做哪些细节工作？">浅谈网站推广要做哪些细节工作？</a>
-                                            </li>
-                                            <li><em></em><a href="http://www.codesou.com/article-1886-1.html"
-                                                            target="_blank" title="用户必要怎样的网站计划">用户必要怎样的网站计划</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--[/diy]-->
-                    </ul>
-                </div>
-            </div>
-
-            <!-- 推荐咨讯 -->
-            <div class="deansidebox">
-                <div class="deanpubtitle">
-                    <h4>推荐咨讯</h4>
-                    <div class="deanpbright">
-                        <a href="#" target="_blank">更多</a>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="deanonvideos">
-                    <ul>
-                        <!--[diy=deangamestt1ss]-->
-                        <div id="deangamestt1ss" class="area">
-                            <div id="frameUxqQ46" class="frame move-span cl frame-1">
-                                <div id="frameUxqQ46_left" class="column frame-1-c">
-                                    <div id="frameUxqQ46_left_temp" class="move-span temp"></div>
-                                    <div id="portal_block_127" class="block move-span">
-                                        <div id="portal_block_127_content" class="dxb_bc">
-                                            <li>
-                                                <img src="static/picture/cb803f5143209632e34c6312493c6fbb.jpg"
-                                                     width="200" height="200" title="以国表里着名网站为例 关于网站分页导航的一些思索"/>
-                                                <a href="http://www.codesou.com/article-1891-1.html" target="_blank"
-                                                   title="以国表里着名网站为例 关于网站分页导航的一些思索">
-                                                    <em>以国表里着名网站为例 关于</em>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <img src="static/picture/6b6e00eeb0d9b77abfd5f88a30a7310a.jpg"
-                                                     width="200" height="200" title="百度站长平台网站logo考核示例以及个人总结"/>
-                                                <a href="http://www.codesou.com/article-1888-1.html" target="_blank"
-                                                   title="百度站长平台网站logo考核示例以及个人总结">
-                                                    <em>百度站长平台网站logo考核</em>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <img src="static/picture/0daf189cf42811b72e226c2d82441766.jpg"
-                                                     width="200" height="200" title="三沙市委书记确认：将在南海黄岩岛上建情况监测站"/>
-                                                <a href="http://www.codesou.com/article-1881-1.html" target="_blank"
-                                                   title="三沙市委书记确认：将在南海黄岩岛上建情况监测站">
-                                                    <em>三沙市委书记确认：将在南</em>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <img src="static/picture/4af0ef4966aa864e9a4b1b359fa78563.jpg"
-                                                     width="200" height="200" title="中国为何要建第五个南极观察站？专家做出解答"/>
-                                                <a href="http://www.codesou.com/article-1880-1.html" target="_blank"
-                                                   title="中国为何要建第五个南极观察站？专家做出解答">
-                                                    <em>中国为何要建第五个南极观</em>
-                                                </a>
-                                            </li>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--[/diy]-->
-                        <div class="clear"></div>
-                    </ul>
-                </div>
-
             </div>
             <!-- 排行榜 -->
             <div class="deansidebox">
@@ -924,253 +138,243 @@
                 </div>
                 <div class="deanranklistbox">
                     <ul>
-                        <!--[diy=deanranklistbox]-->
-                        <div id="deanranklistbox" class="area">
-                            <div id="frameC1ytTD" class="frame move-span cl frame-1">
-                                <div id="frameC1ytTD_left" class="column frame-1-c">
-                                    <div id="frameC1ytTD_left_temp" class="move-span temp"></div>
-                                    <div id="portal_block_130" class="block move-span">
-                                        <div id="portal_block_130_content" class="dxb_bc">
-                                            <li class="on">
-                                                <div class="deanoutters">
-                                                    <em class="deanbgcolor1s">1</em>
-                                                    <a href="http://www.codesou.com/article-235-1.html" target="_blank">[汇码资讯]多域名301跳转合并，对于SEO的影</a>
-                                                    <div class="clear"></div>
-                                                </div>
-                                                <div class="deaninners">
-                                                    <div class="deaninnerspitfd">
-                                                        <a href="http://www.codesou.com/article-235-1.html"
-                                                           target="_blank">
-                                                            <img src="static/picture/63bb1f57a52f3fce22859dd72330292b.jpg"
-                                                                 width="120" height="90"/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="deaninerinfosd">
-                                                        <p>在SEO的日常工作中，我们经常会遇到从新建站的问题，那么随之而来的也就面临域名改变</p>
-                                                        <div class="deanrlifd">
-                                                            阅读：254<i>|</i>2018-10-19
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="deanoutters">
-                                                    <em class="deanbgcolor1s">2</em>
-                                                    <a href="http://www.codesou.com/article-540-1.html" target="_blank">教你利用百度产品来推广自己的网站</a>
-                                                    <div class="clear"></div>
-                                                </div>
-                                                <div class="deaninners">
-                                                    <div class="deaninnerspitfd">
-                                                        <a href="http://www.codesou.com/article-540-1.html"
-                                                           target="_blank">
-                                                            <img src="static/picture/1b93ef82d54fea3fe3b7ef364a779a5d.jpg"
-                                                                 width="120" height="90"/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="deaninerinfosd">
-                                                        <p> 　　百度是各位站长流量最大的来源，下面小编来讲讲如何利用百度的产品推广自己的网</p>
-                                                        <div class="deanrlifd">
-                                                            阅读：125<i>|</i>2018-10-30
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="deanoutters">
-                                                    <em class="deanbgcolor1s">3</em>
-                                                    <a href="http://www.codesou.com/article-1736-1.html"
-                                                       target="_blank">企业建站可行性分析</a>
-                                                    <div class="clear"></div>
-                                                </div>
-                                                <div class="deaninners">
-                                                    <div class="deaninnerspitfd">
-                                                        <a href="http://www.codesou.com/article-1736-1.html"
-                                                           target="_blank">
-                                                            <img src="static/picture/f7143abc10eaa897c7720761e33bc249.jpg"
-                                                                 width="120" height="90"/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="deaninerinfosd">
-                                                        <p>一、需求背景及其意义需求背景:了解企业建站需要先了解当前中国的互联网化情况和当前</p>
-                                                        <div class="deanrlifd">
-                                                            阅读：46<i>|</i>2018-11-06
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="deanoutters">
-                                                    <em class="deanbgcolor1s deanbgcolor2s">4</em>
-                                                    <a href="http://www.codesou.com/article-381-1.html" target="_blank">崇左：从边陲“末梢”走向开辟开放前沿_经</a>
-                                                    <div class="clear"></div>
-                                                </div>
-                                                <div class="deaninners">
-                                                    <div class="deaninnerspitfd">
-                                                        <a href="http://www.codesou.com/article-381-1.html"
-                                                           target="_blank">
-                                                            <img src="static/picture/340cecc8ba89ddd28c71d58668642ab9.jpg"
-                                                                 width="120" height="90"/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="deaninerinfosd">
-                                                        <p>　　在故国西南方陲，有一个很特别的疆域都会。它既古老又年轻，有浓厚的壮族边关文化</p>
-                                                        <div class="deanrlifd">
-                                                            阅读：829<i>|</i>2018-10-27
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="deanoutters">
-                                                    <em class="deanbgcolor1s deanbgcolor2s">5</em>
-                                                    <a href="http://www.codesou.com/article-1562-1.html"
-                                                       target="_blank">WordPress建站教程</a>
-                                                    <div class="clear"></div>
-                                                </div>
-                                                <div class="deaninners">
-                                                    <div class="deaninnerspitfd">
-                                                        <a href="http://www.codesou.com/article-1562-1.html"
-                                                           target="_blank">
-                                                            <img src="static/picture/12432a28e78fc3c443c62f9fc2b6b218.jpg"
-                                                                 width="120" height="90"/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="deaninerinfosd">
-                                                        <p>　　WordPress是一种使用PHP语言和MySQL数据库开发的开源、免费的Blog(博客，网志)引</p>
-                                                        <div class="deanrlifd">
-                                                            阅读：73<i>|</i>2018-11-03
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="deanoutters">
-                                                    <em class="deanbgcolor1s deanbgcolor2s">6</em>
-                                                    <a href="http://www.codesou.com/article-1674-1.html"
-                                                       target="_blank">35款值得网站开辟者收藏的JAVASCRIPT图形图</a>
-                                                    <div class="clear"></div>
-                                                </div>
-                                                <div class="deaninners">
-                                                    <div class="deaninnerspitfd">
-                                                        <a href="http://www.codesou.com/article-1674-1.html"
-                                                           target="_blank">
-                                                            <img src="static/picture/4a7ad332846f14f64fd51cbaaea60d06.jpg"
-                                                                 width="120" height="90"/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="deaninerinfosd">
-                                                        <p> 　　图表是数据图形化的表现，通过形象的图表来展示数据，好比条形图，折线图，饼图</p>
-                                                        <div class="deanrlifd">
-                                                            阅读：911<i>|</i>2018-11-05
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="deanoutters">
-                                                    <em class="deanbgcolor1s deanbgcolor2s">7</em>
-                                                    <a href="http://www.codesou.com/article-342-1.html" target="_blank">竹子建站助天使印象儿童摄影响应式网站上线</a>
-                                                    <div class="clear"></div>
-                                                </div>
-                                                <div class="deaninners">
-                                                    <div class="deaninnerspitfd">
-                                                        <a href="http://www.codesou.com/article-342-1.html"
-                                                           target="_blank">
-                                                            <img src="static/picture/233526ivtahtn9iv3ahz6i.jpg"
-                                                                 width="120" height="90"/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="deaninerinfosd">
-                                                        <p>　　官网已经成为企业通过互联网获得客户、展示品牌最重要的渠道之一，随着移动互联网</p>
-                                                        <div class="deanrlifd">
-                                                            阅读：51<i>|</i>2018-10-26
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="deanoutters">
-                                                    <em class="deanbgcolor1s deanbgcolor2s">8</em>
-                                                    <a href="http://www.codesou.com/article-1513-1.html"
-                                                       target="_blank">13大网络营销最有效的免费推广方式</a>
-                                                    <div class="clear"></div>
-                                                </div>
-                                                <div class="deaninners">
-                                                    <div class="deaninnerspitfd">
-                                                        <a href="http://www.codesou.com/article-1513-1.html"
-                                                           target="_blank">
-                                                            <img src="static/picture/115505d6gs783awfnfixl5.jpg"
-                                                                 width="120" height="90"/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="deaninerinfosd">
-                                                        <p>    随着互联网的蓬勃发展，网络营销对企业来说，越来越重要，企业除了网络上投放</p>
-                                                        <div class="deanrlifd">
-                                                            阅读：102<i>|</i>2018-11-02
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="deanoutters">
-                                                    <em class="deanbgcolor1s deanbgcolor2s">9</em>
-                                                    <a href="http://www.codesou.com/article-1888-1.html"
-                                                       target="_blank">百度站长平台网站logo考核示例以及个人总结</a>
-                                                    <div class="clear"></div>
-                                                </div>
-                                                <div class="deaninners">
-                                                    <div class="deaninnerspitfd">
-                                                        <a href="http://www.codesou.com/article-1888-1.html"
-                                                           target="_blank">
-                                                            <img src="static/picture/122003ogqz7tqnqtzgd2e1.jpg"
-                                                                 width="120" height="90"/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="deaninerinfosd">
-                                                        <p>　　对许多做SEO的人来说，百度站长社区，是再认识不外的了，许多的站长在这内里，交</p>
-                                                        <div class="deanrlifd">
-                                                            阅读：127<i>|</i>2018-12-04
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="deanoutters">
-                                                    <em class="deanbgcolor1s deanbgcolor2s">10</em>
-                                                    <a href="http://www.codesou.com/article-192-1.html" target="_blank">制定Seo策略前的思考</a>
-                                                    <div class="clear"></div>
-                                                </div>
-                                                <div class="deaninners">
-                                                    <div class="deaninnerspitfd">
-                                                        <a href="http://www.codesou.com/article-192-1.html"
-                                                           target="_blank">
-                                                            <img src="static/picture/153046me9hbk6ej9zkufn6.jpg"
-                                                                 width="120" height="90"/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="deaninerinfosd">
-                                                        <p>    第一、知道网站优化的具体目的每一个seo项目执行之前都要有一份详尽的计划，</p>
-                                                        <div class="deanrlifd">
-                                                            阅读：112<i>|</i>2018-10-19
-                                                        </div>
-                                                    </div>
-                                                    <div class="clear"></div>
-                                                </div>
-                                            </li>
-                                        </div>
+                        <li class="on">
+                            <div class="deanoutters">
+                                <em class="deanbgcolor1s">1</em>
+                                <a href="http://www.codesou.com/article-235-1.html" target="_blank">[汇码资讯]多域名301跳转合并，对于SEO的影</a>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="deaninners">
+                                <div class="deaninnerspitfd">
+                                    <a href="http://www.codesou.com/article-235-1.html"
+                                       target="_blank">
+                                        <img src="static/picture/63bb1f57a52f3fce22859dd72330292b.jpg"
+                                             width="120" height="90"/>
+                                    </a>
+                                </div>
+                                <div class="deaninerinfosd">
+                                    <p>在SEO的日常工作中，我们经常会遇到从新建站的问题，那么随之而来的也就面临域名改变</p>
+                                    <div class="deanrlifd">
+                                        阅读：254<i>|</i>2018-10-19
                                     </div>
                                 </div>
+                                <div class="clear"></div>
                             </div>
-                        </div><!--[/diy]-->
+                        </li>
+                        <li>
+                            <div class="deanoutters">
+                                <em class="deanbgcolor1s">2</em>
+                                <a href="http://www.codesou.com/article-540-1.html" target="_blank">教你利用百度产品来推广自己的网站</a>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="deaninners">
+                                <div class="deaninnerspitfd">
+                                    <a href="http://www.codesou.com/article-540-1.html"
+                                       target="_blank">
+                                        <img src="static/picture/1b93ef82d54fea3fe3b7ef364a779a5d.jpg"
+                                             width="120" height="90"/>
+                                    </a>
+                                </div>
+                                <div class="deaninerinfosd">
+                                    <p> 　　百度是各位站长流量最大的来源，下面小编来讲讲如何利用百度的产品推广自己的网</p>
+                                    <div class="deanrlifd">
+                                        阅读：125<i>|</i>2018-10-30
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="deanoutters">
+                                <em class="deanbgcolor1s">3</em>
+                                <a href="http://www.codesou.com/article-1736-1.html"
+                                   target="_blank">企业建站可行性分析</a>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="deaninners">
+                                <div class="deaninnerspitfd">
+                                    <a href="http://www.codesou.com/article-1736-1.html"
+                                       target="_blank">
+                                        <img src="static/picture/f7143abc10eaa897c7720761e33bc249.jpg"
+                                             width="120" height="90"/>
+                                    </a>
+                                </div>
+                                <div class="deaninerinfosd">
+                                    <p>一、需求背景及其意义需求背景:了解企业建站需要先了解当前中国的互联网化情况和当前</p>
+                                    <div class="deanrlifd">
+                                        阅读：46<i>|</i>2018-11-06
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="deanoutters">
+                                <em class="deanbgcolor1s deanbgcolor2s">4</em>
+                                <a href="http://www.codesou.com/article-381-1.html"
+                                   target="_blank">崇左：从边陲“末梢”走向开辟开放前沿_经</a>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="deaninners">
+                                <div class="deaninnerspitfd">
+                                    <a href="http://www.codesou.com/article-381-1.html"
+                                       target="_blank">
+                                        <img src="static/picture/340cecc8ba89ddd28c71d58668642ab9.jpg"
+                                             width="120" height="90"/>
+                                    </a>
+                                </div>
+                                <div class="deaninerinfosd">
+                                    <p>　　在故国西南方陲，有一个很特别的疆域都会。它既古老又年轻，有浓厚的壮族边关文化</p>
+                                    <div class="deanrlifd">
+                                        阅读：829<i>|</i>2018-10-27
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="deanoutters">
+                                <em class="deanbgcolor1s deanbgcolor2s">5</em>
+                                <a href="http://www.codesou.com/article-1562-1.html"
+                                   target="_blank">WordPress建站教程</a>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="deaninners">
+                                <div class="deaninnerspitfd">
+                                    <a href="http://www.codesou.com/article-1562-1.html"
+                                       target="_blank">
+                                        <img src="static/picture/12432a28e78fc3c443c62f9fc2b6b218.jpg"
+                                             width="120" height="90"/>
+                                    </a>
+                                </div>
+                                <div class="deaninerinfosd">
+                                    <p>　　WordPress是一种使用PHP语言和MySQL数据库开发的开源、免费的Blog(博客，网志)引</p>
+                                    <div class="deanrlifd">
+                                        阅读：73<i>|</i>2018-11-03
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="deanoutters">
+                                <em class="deanbgcolor1s deanbgcolor2s">6</em>
+                                <a href="http://www.codesou.com/article-1674-1.html"
+                                   target="_blank">35款值得网站开辟者收藏的JAVASCRIPT图形图</a>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="deaninners">
+                                <div class="deaninnerspitfd">
+                                    <a href="http://www.codesou.com/article-1674-1.html"
+                                       target="_blank">
+                                        <img src="static/picture/4a7ad332846f14f64fd51cbaaea60d06.jpg"
+                                             width="120" height="90"/>
+                                    </a>
+                                </div>
+                                <div class="deaninerinfosd">
+                                    <p> 　　图表是数据图形化的表现，通过形象的图表来展示数据，好比条形图，折线图，饼图</p>
+                                    <div class="deanrlifd">
+                                        阅读：911<i>|</i>2018-11-05
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="deanoutters">
+                                <em class="deanbgcolor1s deanbgcolor2s">7</em>
+                                <a href="http://www.codesou.com/article-342-1.html"
+                                   target="_blank">竹子建站助天使印象儿童摄影响应式网站上线</a>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="deaninners">
+                                <div class="deaninnerspitfd">
+                                    <a href="http://www.codesou.com/article-342-1.html"
+                                       target="_blank">
+                                        <img src="static/picture/233526ivtahtn9iv3ahz6i.jpg"
+                                             width="120" height="90"/>
+                                    </a>
+                                </div>
+                                <div class="deaninerinfosd">
+                                    <p>　　官网已经成为企业通过互联网获得客户、展示品牌最重要的渠道之一，随着移动互联网</p>
+                                    <div class="deanrlifd">
+                                        阅读：51<i>|</i>2018-10-26
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="deanoutters">
+                                <em class="deanbgcolor1s deanbgcolor2s">8</em>
+                                <a href="http://www.codesou.com/article-1513-1.html"
+                                   target="_blank">13大网络营销最有效的免费推广方式</a>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="deaninners">
+                                <div class="deaninnerspitfd">
+                                    <a href="http://www.codesou.com/article-1513-1.html"
+                                       target="_blank">
+                                        <img src="static/picture/115505d6gs783awfnfixl5.jpg"
+                                             width="120" height="90"/>
+                                    </a>
+                                </div>
+                                <div class="deaninerinfosd">
+                                    <p>    随着互联网的蓬勃发展，网络营销对企业来说，越来越重要，企业除了网络上投放</p>
+                                    <div class="deanrlifd">
+                                        阅读：102<i>|</i>2018-11-02
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="deanoutters">
+                                <em class="deanbgcolor1s deanbgcolor2s">9</em>
+                                <a href="http://www.codesou.com/article-1888-1.html"
+                                   target="_blank">百度站长平台网站logo考核示例以及个人总结</a>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="deaninners">
+                                <div class="deaninnerspitfd">
+                                    <a href="http://www.codesou.com/article-1888-1.html"
+                                       target="_blank">
+                                        <img src="static/picture/122003ogqz7tqnqtzgd2e1.jpg"
+                                             width="120" height="90"/>
+                                    </a>
+                                </div>
+                                <div class="deaninerinfosd">
+                                    <p>　　对许多做SEO的人来说，百度站长社区，是再认识不外的了，许多的站长在这内里，交</p>
+                                    <div class="deanrlifd">
+                                        阅读：127<i>|</i>2018-12-04
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="deanoutters">
+                                <em class="deanbgcolor1s deanbgcolor2s">10</em>
+                                <a href="http://www.codesou.com/article-192-1.html" target="_blank">制定Seo策略前的思考</a>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="deaninners">
+                                <div class="deaninnerspitfd">
+                                    <a href="http://www.codesou.com/article-192-1.html"
+                                       target="_blank">
+                                        <img src="static/picture/153046me9hbk6ej9zkufn6.jpg"
+                                             width="120" height="90"/>
+                                    </a>
+                                </div>
+                                <div class="deaninerinfosd">
+                                    <p>    第一、知道网站优化的具体目的每一个seo项目执行之前都要有一份详尽的计划，</p>
+                                    <div class="deanrlifd">
+                                        阅读：112<i>|</i>2018-10-19
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <script type="text/javascript">
@@ -1191,254 +395,37 @@
                     <div class="clear"></div>
                 </div>
                 <div class="deanimg_news">
-                    <!--[diy=deanimg_news]-->
-                    <div id="deanimg_news" class="area">
-                        <div id="frameXTKKk8" class="frame move-span cl frame-1">
-                            <div id="frameXTKKk8_left" class="column frame-1-c">
-                                <div id="frameXTKKk8_left_temp" class="move-span temp"></div>
-                                <div id="portal_block_128" class="block move-span">
-                                    <div id="portal_block_128_content" class="dxb_bc"><a
-                                            href="http://www.codesou.com/article-1891-1.html" target="_blank"
-                                            title="以国表里着名网站为例 关于网站分页导航的一些思索"><img
-                                            src="static/picture/83935edf582567247e03d4d0353d3049.jpg" width="150"
-                                            height="85"
-                                            alt="以国表里着名网站为例 关于网站分页导航的一些思索"><span><em>以国表里着名网站为例 关于网站分页导航的</em></span></a><a
-                                            href="http://www.codesou.com/article-1888-1.html" target="_blank"
-                                            title="百度站长平台网站logo考核示例以及个人总结"><img
-                                            src="static/picture/630e5b257b7349f57fd6ff4c1e92fca8.jpg" width="150"
-                                            height="85"
-                                            alt="百度站长平台网站logo考核示例以及个人总结"><span><em>百度站长平台网站logo考核示例以及个人总结</em></span></a><a
-                                            href="http://www.codesou.com/article-1881-1.html" target="_blank"
-                                            title="三沙市委书记确认：将在南海黄岩岛上建情况监测站"><img
-                                            src="static/picture/69471d78ad67223b48d55c6705bd60c9.jpg" width="150"
-                                            height="85"
-                                            alt="三沙市委书记确认：将在南海黄岩岛上建情况监测站"><span><em>三沙市委书记确认：将在南海黄岩岛上建情况</em></span></a><a
-                                            href="http://www.codesou.com/article-1880-1.html" target="_blank"
-                                            title="中国为何要建第五个南极观察站？专家做出解答"><img
-                                            src="static/picture/c1ae87bc7a6be42e519cc08b958ba8a4.jpg" width="150"
-                                            height="85" alt="中国为何要建第五个南极观察站？专家做出解答"><span><em>中国为何要建第五个南极观察站？专家做出解</em></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--[/diy]-->
-
-                    <div class="clear"></div>
+                    <a
+                            href="http://www.codesou.com/article-1891-1.html" target="_blank"
+                            title="以国表里着名网站为例 关于网站分页导航的一些思索"><img
+                            src="static/picture/83935edf582567247e03d4d0353d3049.jpg" width="150"
+                            height="85"
+                            alt="以国表里着名网站为例 关于网站分页导航的一些思索"><span><em>以国表里着名网站为例 关于网站分页导航的</em></span></a><a
+                        href="http://www.codesou.com/article-1888-1.html" target="_blank"
+                        title="百度站长平台网站logo考核示例以及个人总结"><img
+                        src="static/picture/630e5b257b7349f57fd6ff4c1e92fca8.jpg" width="150"
+                        height="85"
+                        alt="百度站长平台网站logo考核示例以及个人总结"><span><em>百度站长平台网站logo考核示例以及个人总结</em></span></a><a
+                        href="http://www.codesou.com/article-1881-1.html" target="_blank"
+                        title="三沙市委书记确认：将在南海黄岩岛上建情况监测站"><img
+                        src="static/picture/69471d78ad67223b48d55c6705bd60c9.jpg" width="150"
+                        height="85"
+                        alt="三沙市委书记确认：将在南海黄岩岛上建情况监测站"><span><em>三沙市委书记确认：将在南海黄岩岛上建情况</em></span></a><a
+                        href="http://www.codesou.com/article-1880-1.html" target="_blank"
+                        title="中国为何要建第五个南极观察站？专家做出解答"><img
+                        src="static/picture/c1ae87bc7a6be42e519cc08b958ba8a4.jpg" width="150"
+                        height="85" alt="中国为何要建第五个南极观察站？专家做出解答"><span><em>中国为何要建第五个南极观察站？专家做出解</em></span></a>
                 </div>
             </div>
-            <!--ads-->
-            <div class="deansideads"><!--[diy=deansideads]-->
-                <div id="deansideads" class="area">
-                    <div id="frameNdkC7E" class="frame move-span cl frame-1">
-                        <div id="frameNdkC7E_left" class="column frame-1-c">
-                            <div id="frameNdkC7E_left_temp" class="move-span temp"></div>
-                            <div id="portal_block_131" class="block move-span">
-                                <div id="portal_block_131_content" class="dxb_bc">
-                                    <div class="portal_block_summary"><a href="#" target="_blank"><img
-                                            src="static/picture/ads1.jpg"></a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--[/diy]--></div>
+            <div class="deansideads">
+                <div class="portal_block_summary"><a href="#" target="_blank"><img
+                        src="static/picture/ads1.jpg"></a></div>
+            </div>
 
         </div>
     </div>
-    <div class="wp mtn">
-        <!--[diy=diy3]-->
-        <div id="diy3" class="area"></div><!--[/diy]-->
-    </div>
 </div>
-<!--侧边工具栏-->
-<div class="deansidetools">
-    <ul>
-        <li class="kefu_part_box">
-            <a class="kefu_part">
-                <i class="icon_kefu"></i>
-                客服
-            </a>
-            <div class="kefu_part_open">
-                <i class="deansideicon_qq"></i>
-                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1691779149&amp;site=qq&amp;menu=yes" title="在线咨询"
-                   class="deanonline">在线咨询</a>
-                <p class="deansidetime">在线时间：9:00~18：00</p>
-                <p class="deansidephone">固定电话：0592-3593333</p>
-                <p class="deansidetel">客服热线：400-9907-315</p>
-            </div>
-        </li>
-        <!--<li class="weixin_part_box">
-            <a class="weixin_part">
-                <i class="icon_erweima"></i>
-                微信
-            </a>
-            <div class="weixin_part_open"></div>
-        </li>-->
-        <li class="app_part_box">
-            <a class="app_part" onClick="showWindow('nav', this.href, 'get', 0)"
-               href="forum.php?mod=misc&amp;action=nav">
-                <i class="icon_app"></i>
-                发帖
-            </a>
-        </li>
-        <!--返回顶部-->
-        <div id="scrolltop">
-            <span hidefocus="true"><a title="返回顶部" onClick="window.scrollTo('0','0')" class="scrolltopa"><b>返回顶部</b></a></span>
-        </div>
-
-    </ul>
-</div>
-
-<script defer="defer" src="static/js/plugin.js"></script>
-<div class="deanfooter">
-    <div class="deanfttop">
-        <div class="w1180">
-            <div class="deanfttl">
-                <div class="deanftlogo"><img src="static/picture/ftlogo.png"/></div>
-                <div class="deanftguanzhu">
-                    <div class="deanftgzpic">
-                        <img src="static/picture/erweima.png"/>
-                        <span>官方交流平台</span>
-                    </div>
-                    <div class="deanftgzingo">
-                        <p>域名：codesou.com</p>
-                        <p>名称：源码搜论坛</p>
-                        <p>站长：1943759704</p>
-                        <p>QQ群：831818825</p>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-
-            </div>
-            <div class="deanfttm">
-                <ul>
-                    <li>
-                        <h5>模板源码</h5>
-                        <a href="/forum.php?mod=forumdisplay&amp;fid=42&amp;filter=sortid&amp;sortid=2&amp;searchsort=1&amp;d_geshi=10"
-                           target="_blank">WordPress模板</a>
-                        <a href="/forum.php?mod=forumdisplay&amp;fid=42&amp;filter=sortid&amp;sortid=2&amp;searchsort=1&amp;d_geshi=7"
-                           target="_blank">Discuz模板</a>
-                        <a href="/forum.php?mod=forumdisplay&amp;fid=42&amp;filter=sortid&amp;sortid=2&amp;searchsort=1&amp;d_geshi=1"
-                           target="_blank">DedeCms模板</a>
-                        <a href="/forum.php?mod=forumdisplay&amp;fid=42&amp;filter=sortid&amp;sortid=2&amp;searchsort=1&amp;d_geshi=17"
-                           target="_blank">手机模板</a>
-                    </li>
-                    <li>
-                        <h5>源码种类</h5>
-                        <a href="/forum.php?mod=forumdisplay&amp;fid=48&amp;filter=sortid&amp;sortid=2&amp;searchsort=1&amp;d_leibie=2"
-                           target="_blank">PHP源码</a>
-                        <a href="/forum.php?mod=forumdisplay&amp;fid=48&amp;filter=sortid&amp;sortid=2&amp;searchsort=1&amp;d_leibie=1"
-                           target="_blank">ASP源码</a>
-                        <a href="/forum.php?mod=forumdisplay&amp;fid=48&amp;filter=sortid&amp;sortid=2&amp;searchsort=1&amp;d_leibie=3"
-                           target="_blank">NET源码</a>
-                        <a href="/forum.php?mod=forumdisplay&amp;fid=48&amp;filter=sortid&amp;sortid=2&amp;searchsort=1&amp;d_leibie=4"
-                           target="_blank">JSP源码</a>
-                    </li>
-                    <li>
-                        <h5>关于我们</h5>
-                        <a href="#" target="_blank">关于我们</a>
-                        <a href="/forum.php?mod=forumdisplay&amp;fid=59" target="_blank">帮助中心</a>
-                        <a href="/forum.php?mod=viewthread&amp;tid=97" target="_blank">权益保障</a>
-                        <a href="/forum.php?mod=viewthread&amp;tid=96" target="_blank">下载须知</a>
-                    </li>
-                    <li>
-                        <h5>网站功能</h5>
-                        <a href="/forum.php?mod=forumdisplay&amp;fid=37" target="_blank">视频教程</a>
-                        <a href="#" target="_blank">成为VIP</a>
-                        <a href="/forum.php?mod=viewthread&amp;tid=89" target="_blank">版权声明</a>
-                    </li>
-                    <div class="clear"></div>
-                </ul>
-            </div>
-            <div class="deanfttr">
-                <div class="deanfttels">
-                    <i></i>
-                    <div class="deanfttelr">
-                        <h3>全国服务热线:</h3>
-                        <p>400-123-456789</p>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="deantelbtms">（工作日：周一至周五 9:00-16:00）</div>
-                <div class="deanftitelsd">重庆市渝中区中山三路21号</div>
-                <div class="deanftitelem">1943759704@qq.com</div>
-                <div class="deankfqq"><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1943759704&amp;site=qq&amp;menu=yes"
-                                         target="_blank">QQ在线客服</a></div>
-            </div>
-            <div class="clear"></div>
-        </div>
-    </div>
-    <div class="deanftbottom">
-        <p class="deanpp">
-
-            <a href="http://www.codesou.com/archiver/">Archiver</a><span class="pipe">-</span><a
-                href="http://m.codesou.com">手机版</a><span class="pipe">-</span><a
-                href="http://www.codesou.com/forum.php?mod=misc&action=showdarkroom">小黑屋</a><span class="pipe">-</span>
-            <a href="http://www.codesou.com/" target="_blank">源码搜论坛</a>
-
-            <script>
-                var _hmt = _hmt || [];
-                (function () {
-                    var hm = document.createElement("script");
-                    hm.src = "https://hm.baidu.com/hm.js?b599b567087c03918ea24b0002aae112";
-                    var s = document.getElementsByTagName("script")[0];
-                    s.parentNode.insertBefore(hm, s);
-                })();
-            </script>
-        </p>
-        <p>
-            Copyright © 2018-2022 源码搜论坛版权所有！ &nbsp;&nbsp;<a href="http://www.miitbeian.gov.cn/" target="_blank">渝ICP备14006307号-4</a>
-        </p>
-        <div class="deanbutNav">
-            <a title="工商网监" href="#" target="_blank"><img src="static/picture/botpic_r1_c4.png"></a>
-            <a title="安全联盟实名认证" href="#" target="_blank"><img src="static/picture/botpic_r1_c1.jpg"></a>
-            <a href="#" target="_blank">
-                <img src="static/picture/botpic_r1_c5.png" width="100" alt="安全联盟认证"/>
-            </a>
-            <a title="财付通" href="#" target="_blank"><img src="static/picture/botpic_r1_c2.jpg"></a>
-            <a title="支付宝" href="#" target="_blank"><img src="static/picture/botpic_r1_c3.jpg"></a>
-        </div>
-    </div>
-</div>
-
-<div id="ft" style=" display:none;">
-</div>
-
-
-<script src="static/js/home.js" type="text/javascript"></script>
-
-<div id="scrolltop" style="display:none;">
-    <span hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" id="scrolltopa"><b>返回顶部</b></a></span>
-</div>
-
-
-<script type="text/javascript">_attachEvent(window, 'scroll', function () {
-    showTopLink();
-});
-checkBlind();</script>
-<script>window._bd_share_config = {
-    "common": {
-        "bdSnsKey": {},
-        "bdText": "",
-        "bdMini": "2",
-        "bdMiniList": false,
-        "bdPic": "",
-        "bdStyle": "0",
-        "bdSize": "16"
-    },
-    "slide": {"type": "slide", "bdImg": "2", "bdPos": "right", "bdTop": "100"},
-    "image": {"viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16"}
-};
-with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
-
-<script src="static/js/jquery.lazyload.js" type="text/javascript"></script>
-<script type="text/javascript" charset="utf-8">
-
-    $(function () {
-        $('img').lazyload();
-    });
-
-</script>
-
+{include file="common/footer"}
 </body>
 </html>
 

@@ -87,9 +87,41 @@
 <div id="ft" style=" display:none;">
 </div>
 <script src="static/js/home.js" type="text/javascript"></script>
-<div id="scrolltop" style="display:none;">
-    <span hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" id="scrolltopa" ><b>返回顶部</b></a></span>
+
+<!--侧边工具栏-->
+<div class="deansidetools">
+    <ul>
+        <li class="kefu_part_box">
+            <a class="kefu_part">
+                <i class="icon_kefu"></i> 客服
+            </a>
+            <div class="kefu_part_open">
+                <i class="deansideicon_qq"></i>
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1691779149&amp;site=qq&amp;menu=yes" title="在线咨询" class="deanonline">在线咨询</a>
+                <p class="deansidetime">在线时间：9:00~18：00</p>
+                <p class="deansidephone">固定电话：0592-3593333</p>
+                <p class="deansidetel">客服热线：400-9907-315</p>
+            </div>
+        </li>
+        <!--<li class="weixin_part_box">
+        <a class="weixin_part">
+            <i class="icon_erweima"></i>
+            微信
+        </a>
+        <div class="weixin_part_open"></div>
+    </li>-->
+        <li class="app_part_box">
+            <a class="app_part" onClick="showWindow('nav', this.href, 'get', 0)" href="forum.php?mod=misc&amp;action=nav">
+                <i class="icon_app"></i> 发帖
+            </a>
+        </li>
+        <!--返回顶部-->
+        <div id="scrolltop">
+            <span hidefocus="true"><a title="返回顶部" onClick="window.scrollTo('0','0')" class="scrolltopa" ><b>返回顶部</b></a></span>
+        </div>
+    </ul>
 </div>
+
 <script type="text/javascript">
     _attachEvent(window, 'scroll', function() {
         showTopLink();
