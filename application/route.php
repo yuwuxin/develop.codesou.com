@@ -20,8 +20,9 @@ Route::pattern([
 Route::rule('index','index/index');
 
 Route::rule('article','index/article/index');
-
 Route::rule('article-<id>','index/article/detail');
+
+Route::rule('cat-<id>','index/category/info');
 
 Route::rule('goods','index/goods/index');
 

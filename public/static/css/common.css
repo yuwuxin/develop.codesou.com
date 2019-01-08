@@ -6086,7 +6086,7 @@ hr.da {
 
 .deanheaderbg {
     width: 100%;
-    height: 70px;
+    height: 100px;
     min-width: 1180px;
     background: #fff;
     border-bottom: 1px solid #ededed;
@@ -6096,7 +6096,7 @@ hr.da {
     width: 250px;
     height: 56px;
     float: left;
-    padding-top: 6px;
+    padding-top: 20px;
 }
 
 .deanlogo img {
@@ -6457,7 +6457,7 @@ hr.da {
 
 .deansearch {
     float: left;
-    padding-top: 13px;
+    padding-top: 30px;
     margin-left: 135px;
 }
 
@@ -6540,7 +6540,7 @@ hr.da {
     margin-left: 15px;
     width: 25px;
     height: 30px;
-    margin-top: 15px;
+    margin-top: 32px;
     position: relative;
 }
 
@@ -6759,7 +6759,7 @@ hr.da {
 }
 
 .deandenglu {
-    margin-top: 13px;
+    margin-top: 30px;
 }
 
 .deandlbtn a {
@@ -7691,3 +7691,60 @@ a.scrolltopa:hover {
 #toptb .qq_bind {
     margin-top: 2px;
 }
+
+.site-nav .iconfont{FONT-SIZE:12px;FONT-STYLE:normal;FONT-FAMILY:global-iconfont;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscaleFont type;margin-top:10px;}
+.site-nav{Z-INDEX:10000;WIDTH:100%;height:31px; line-height:31px;background-color:#f7f7f7; border-bottom:1px solid #DFDFDF;}
+.site-nav:unknown{CLEAR:both;content:""}
+.site-nav .site-nav-bd{MARGIN:0px auto;-webkit-backface-visibility:hidden; height:31px; }
+.site-nav-bd .h{COLOR:#222}
+.site-nav .site-nav-bd:unknown{CLEAR:both;content:""}
+.site-nav .site-nav-bd .site-nav-bd-l{DISPLAY:inline;FLOAT:left;}
+.site-nav .site-nav-bd .site-nav-bd-l .menu{FLOAT:left}
+.site-nav .site-nav-bd .site-nav-bd-r .menu{FLOAT:left}
+.site-nav .site-nav-bd .site-nav-bd-r{DISPLAY:inline;FLOAT:right;}
+.site-nav .site-nav-bd .site-nav-bd-r .site-nav-pipe{DISPLAY:inline;FLOAT:left;LINE-HEIGHT:31px;HEIGHT:31px; overflow:hidden}
+.site-nav-fixed{POSITION:fixed;TOP:0px}
+.site-nav-bd .site-nav-pipe{PADDING-RIGHT:5px;PADDING-LEFT:5px;PADDING-BOTTOM:0px;COLOR:#DDD;PADDING-TOP:0px;FONT-STYLE:normal}
+.site-nav-bd .site-nav-btn{background:url(../images/gouwuche.png) no-repeat;width:104px;height:25px;PADDING-BOTTOM:0px;VERTICAL-ALIGN:auto;COLOR:#fff;display:inline-block;}
+
+.site-nav-bd .menu{FLOAT:left}
+.site-nav-bd A{COLOR:#666}
+.site-nav-bd A:hover{COLOR:#f40;}
+.site-nav-bd .menu .menu-hd{PADDING-RIGHT:6px;PADDING-LEFT:6px;Z-INDEX:10002;PADDING-BOTTOM:0px;OVERFLOW:hidden;LINE-HEIGHT:31px;PADDING-TOP:0px;POSITION:relative;HEIGHT:31px;_display:inline;_zoom:1;color:#444444}
+.site-nav-bd .J_Menu:hover .menu-bd{MARGIN-TOP:-1px;DISPLAY:block;Z-INDEX:10001;POSITION:relative;}
+.site-nav-bd .J_Menu:hover .menu-hd{background:#FFF;}
+.site-nav-bd .J_Menu:hover .menu-hd a{ color:#333;}
+.site-nav-bd .J_Menu .menu-hd A:hover{color:#E30400}
+.site-nav-bd .favorite:hover .menu-bd{MARGIN-TOP:-1px;DISPLAY:block;Z-INDEX:10001;POSITION:absolute;}
+.site-nav-bd .menu .menu-hd h1{DISPLAY:inline;FONT-SIZE:12px;FLOAT:left;MARGIN-RIGHT:7px; color:#444; font-weight:normal}
+.site-nav-bd .menu .menu-hd h2{DISPLAY:inline;FONT-SIZE:12px;FLOAT:left;MARGIN-RIGHT:7px; color:#444; font-weight:normal}
+.site-nav-bd .menu .menu-hd a{DISPLAY:inline;FONT-SIZE:12px;FLOAT:left;MARGIN-RIGHT:7px; color:#444; font-weight:normal}
+.site-nav-bd .menu .mobile a{ background:url(../images/news_icon.png) no-repeat -5px 8px; padding-left:18px; margin-right:0}
+.site-nav-bd .menu .mobile a:hover{ background-position:-5px -117px;}
+.site-nav-bd .menu .weixin a{ background:url(../images/news_icon.png) no-repeat -4px -76px; padding-left:22px;}
+.site-nav-bd .menu .weixin a:hover{ background-position:-4px -36px;}
+
+.site-nav-bd .menu .shadow img{ box-shadow:3px 6px 3px rgba(0,0,0,.1)}
+.site-nav-bd .menu .menu-hd A:hover .iconfont{COLOR:#f40; background-position:-187px -203px !important;}
+.site-nav-bd .menu .menu-hd A:hover{COLOR:#000!important}
+.site-nav-bd .menu .menu-hd A SPAN{DISPLAY:inline;FLOAT:left;CURSOR:pointer}
+.site-nav-bd .menu .menu-hd I{DISPLAY:inline;FLOAT:left;MARGIN:15px 0px;WIDTH:6px;POSITION:relative;HEIGHT:6px;-webkit-transition:.3s ease-in;-moz-transition:.3s ease-in;-o-transition:.3s ease-in;transition:.3s ease-in}
+.site-nav-bd .menu .menu-hd I EM{BORDER-RIGHT:transparent 3px solid;BORDER-TOP:transparent 3px solid;LEFT:0px;OVERFLOW:hidden;BORDER-LEFT:transparent 3px solid;WIDTH:0px;BORDER-BOTTOM:transparent 0px solid;ZOOM:1;POSITION:absolute;HEIGHT:0px;_border-color:tomato;_filter:chroma(color=tomato);BORDER-TOP-COLOR:#666;TOP:1px}
+.site-nav-bd .menu .menu-hd I SPAN{BORDER-RIGHT:transparent 3px solid;BORDER-TOP:transparent 3px solid;LEFT:0px;OVERFLOW:hidden;BORDER-LEFT:transparent 3px solid;WIDTH:0px;BORDER-BOTTOM:transparent 0px solid;ZOOM:1;POSITION:absolute;TOP:0px;HEIGHT:0px;_border-color:tomato;_filter:chroma(color=tomato); BORDER-TOP-COLOR:#808080}
+.site-nav-bd .menu .menu-bd .menu-bd-panel{BORDER-RIGHT:#eee 1px solid;PADDING-RIGHT:8px;BORDER-TOP:#eee 1px solid;PADDING-LEFT:8px;BACKGROUND:#fff;right:-1px;PADDING-BOTTOM:8px;BORDER-LEFT:#eee 1px solid;LINE-HEIGHT:normal;PADDING-TOP:8px;BORDER-BOTTOM:#eee 1px solid;POSITION:absolute;TOP:0px;width:85px; border-color:#D5D5D5}
+.site-nav-bd .menu.my-taobao .menu-bd .menu-bd-panel{PADDING-BOTTOM:0px;PADDING-TOP:0px;}
+.site-nav-bd .menu .menu-bd .menu-iframe-shim{Z-INDEX:-1;BACKGROUND:0px 0px;FILTER:alpha(Opacity=0);LEFT:0px;BORDER-TOP-STYLE:none;BORDER-RIGHT-STYLE:none;BORDER-LEFT-STYLE:none;POSITION:absolute;TOP:0px;BORDER-BOTTOM-STYLE:none;opacity:0}
+
+.site-nav-bd .menu-empty .menu-hd I{DISPLAY:none}
+.site-nav-bd .tmsg{DISPLAY:inline;FLOAT:left}
+.site-nav-bd .mini-cart .menu-hd .iconfont{COLOR:#f40}
+.site-nav-bd .site-map .menu-hd .iconfont{COLOR:#f40}
+.site-nav-bd .favorite .menu-bd-panel{WIDTH:76px}
+.site-nav-bd .guide .menu-bd-panel{WIDTH:59px}
+.site-nav-bd .site-map .menu-bd .menu-bd-panel{PADDING-RIGHT:8px;PADDING-LEFT:8px;PADDING-BOTTOM:18px;PADDING-TOP:18px}
+.site-nav-bd .site-map .menu-bd .menu-iframe-shim{RIGHT:0px;LEFT:auto}
+.site-nav-bd .menu .menu-list .menu-bd-panel{PADDING-RIGHT:0px;PADDING-LEFT:0px;PADDING-BOTTOM:8px;PADDING-TOP:8px}
+.site-nav-bd .menu .menu-list .menu-bd-panel A{PADDING-RIGHT:5px;DISPLAY:block;PADDING-LEFT:5px;PADDING-BOTTOM:0px;COLOR:#6c6c6c;LINE-HEIGHT:28px;PADDING-TOP:0px;WHITE-SPACE:nowrap}
+.site-nav-bd .menu .menu-list .menu-bd-panel A:hover{BACKGROUND:#F8F8F8; color:#E30400}
+.site-nav-bd .menu .menu-list .menu-bd-panel .site-nav-btn{background:url(../images/gouwuche.png) no-repeat;width:104px;height:25px;}
+.my-taobao .menu-list .menu-bd-panel A SPAN{MARGIN-LEFT:5px}

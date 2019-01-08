@@ -56,8 +56,8 @@ body {
 
 .deanmn_left {
     background: #fff;
-    padding: 15px;
-    width: 832px;
+    padding: 10px;
+    width: 842px;
     border-top: 0;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.06);
 }
@@ -1105,4 +1105,99 @@ body {
     right: 5px;
     bottom: 5px;
     background: url(../images/adsicon.png) center no-repeat;
+}
+
+.Left {
+    float: left
+}
+
+.f_r {
+    float: right
+}
+
+.listr {
+    width: 842px;
+    overflow: hidden
+}
+
+.listnav {
+    width: 840px;
+    height: 138px;
+    border: 1px solid #DEDBDB;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.ilist {
+    width: 842px;
+    margin-bottom: 10px;
+    overflow: hidden
+}
+
+.newsa {
+    width: 410px;
+}
+
+.newsa_t {
+    height: 40px;
+    line-height: 40px;
+    background: url(../images/title_line.jpg) left bottom no-repeat
+}
+
+.newsa_t h3 {
+    float: left;
+    font-size: 20px;
+    color: #07AEFC;
+    font-weight: normal
+}
+
+.newsa_t font {
+    float: left;
+    text-indent: 8px;
+    padding-top: 4px;
+    font-size: 14px;
+    color: rgb(125, 125, 125);
+    font-weight: normal
+}
+
+.newsa_t span {
+    float: right;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.newsa_t a {
+    color: #666
+}
+
+.newsa ul {
+    padding: 10px 0
+}
+
+.newsa li {
+    width: 397px;
+    height: 24px;
+    line-height: 24px;
+    padding: 8px 0 8px 13px;
+    background: url(../images/li.png) no-repeat left 16px;
+    border-bottom: 1px dashed #ccc;
+    display: block
+}
+
+.newsa li p {
+    width: 340px;
+    height: 24px;
+    float: left;
+    text-align: left;
+    overflow: hidden;
+    font-size: 14px;
+    color: #656464;
+}
+
+.newsa li span {
+    width: 45px;
+    height: 24px;
+    float: right;
+    text-align: center;
+    color: #999
 }
