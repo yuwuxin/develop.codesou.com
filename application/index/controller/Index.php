@@ -19,6 +19,25 @@ class Index extends Frontend
 
     public function index()
     {
+
+        $article_model = model('article');
+        $article_orm = $article_model->table('cs_article')
+            ->field('a.id,a.title,a.cat_id')
+            ->alias('a')
+            ->join('cs_article b', 'a.cat_id = b.cat_id AND a.id < b.id', 'LEFT')
+            ->where('a.is_show',1)
+            ->group('a.id,a.cat_id')
+            ->order('a.id desc')
+            ->having('count(b.id) < 8')
+            //->fetchSql(true)
+            ->select()
+            ->toArray();
+        $article_list = [];
+        if($article_orm){
+            $cat_ids = array_column($article_orm,'cat_id');
+        }
+
+        $this->assign('article_list', $article_orm);
         return $this->view->fetch();
     }
 

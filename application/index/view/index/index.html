@@ -1354,54 +1354,14 @@
                         <div class="deanzxlists">
                             <ul>
                                 <div class="area">
+                                    {volist name='article_list' id ='v'}
                                     <li>
-                                        <a class="deantaglabels" href="forum.php?mod=forumdisplay&fid=38" target="_blank">CMS基础教程</a>
+                                        <a class="deantaglabels" href="article-{$v.id}.html" target="_blank">CMS基础教程</a>
                                         <i>&#8226;</i>
-                                        <a target="_blank" href="forum.php?mod=viewthread&tid=35968" title="znfcic Test drive and new car review" class="deantag_content">znfcic Test drive and new car review</a>
+                                        <a target="_blank" href="article-{$v.id}.html" title="{$v.title}" class="deantag_content">{$v.title}</a>
                                         <div class="clear"></div>
                                     </li>
-                                    <li>
-                                        <a class="deantaglabels" href="forum.php?mod=forumdisplay&fid=38" target="_blank">CMS基础教程</a>
-                                        <i>&#8226;</i>
-                                        <a target="_blank" href="forum.php?mod=viewthread&tid=35967" title="trirmn Best places to stay in the US" class="deantag_content">trirmn Best places to stay in the US</a>
-                                        <div class="clear"></div>
-                                    </li>
-                                    <li>
-                                        <a class="deantaglabels" href="forum.php?mod=forumdisplay&fid=38" target="_blank">CMS基础教程</a>
-                                        <i>&#8226;</i>
-                                        <a target="_blank" href="forum.php?mod=viewthread&tid=35966" title="sjvrvx work Davison mom bags shopping spree at malls Deer Widows event" class="deantag_content">sjvrvx work Davison mom bags shopping sp</a>
-                                        <div class="clear"></div>
-                                    </li>
-                                    <li>
-                                        <a class="deantaglabels" href="forum.php?mod=forumdisplay&fid=38" target="_blank">CMS基础教程</a>
-                                        <i>&#8226;</i>
-                                        <a target="_blank" href="forum.php?mod=viewthread&tid=35965" title="akpocq Pandora Golf Shorts for Men" class="deantag_content">akpocq Pandora Golf Shorts for Men</a>
-                                        <div class="clear"></div>
-                                    </li>
-                                    <li>
-                                        <a class="deantaglabels" href="forum.php?mod=forumdisplay&fid=38" target="_blank">CMS基础教程</a>
-                                        <i>&#8226;</i>
-                                        <a target="_blank" href="forum.php?mod=viewthread&tid=35964" title="aqmvpd Restaurants can help educate diners about sustainable seafood" class="deantag_content">aqmvpd Restaurants can help educate dine</a>
-                                        <div class="clear"></div>
-                                    </li>
-                                    <li>
-                                        <a class="deantaglabels" href="forum.php?mod=forumdisplay&fid=38" target="_blank">CMS基础教程</a>
-                                        <i>&#8226;</i>
-                                        <a target="_blank" href="forum.php?mod=viewthread&tid=35956" title="X3.4默认模版主导航文字，设置加粗无效" class="deantag_content">X3.4默认模版主导航文字，设置加粗无效</a>
-                                        <div class="clear"></div>
-                                    </li>
-                                    <li>
-                                        <a class="deantaglabels" href="forum.php?mod=forumdisplay&fid=38" target="_blank">CMS基础教程</a>
-                                        <i>&#8226;</i>
-                                        <a target="_blank" href="forum.php?mod=viewthread&tid=35952" title="关联链接修改不了也删除不了，还关闭不了" class="deantag_content">关联链接修改不了也删除不了，还关闭不了</a>
-                                        <div class="clear"></div>
-                                    </li>
-                                    <li>
-                                        <a class="deantaglabels" href="forum.php?mod=forumdisplay&fid=38" target="_blank">CMS基础教程</a>
-                                        <i>&#8226;</i>
-                                        <a target="_blank" href="forum.php?mod=viewthread&tid=35950" title="DZX3.4，微信登录 1.1.6 BUG" class="deantag_content">DZX3.4，微信登录 1.1.6 BUG</a>
-                                        <div class="clear"></div>
-                                    </li>
+                                    {/volist}
                                 </div>
                             </ul>
                             <div class="deanzxmorea"><a href="cat-16.html" target="_blank">进入专栏获取更多<em>〉</em></a>
