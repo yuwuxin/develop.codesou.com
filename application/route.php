@@ -17,13 +17,10 @@ Route::pattern([
     'name' => '\w+',
 ]);
 
-Route::rule('index','index/index');
+/*Route::rule('index','index/index');*/
 
 Route::rule('article','index/article/index');
 Route::rule('article-<id>','index/article/detail');
-
 Route::rule('cat-<id>','index/category/info');
-
 Route::rule('goods','index/goods/index');
-
 Route::rule('goods-<id>','index/goods/detail');

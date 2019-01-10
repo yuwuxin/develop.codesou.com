@@ -22,17 +22,41 @@ class Article extends Frontend
         parent::_initialize();
     }
 
-    public function index(){
+    public function index()
+    {
+        $cat_model = model('Category');
+        $article_model = model('Article');
+        $cat_list = $cat_model->field('id,name,flag,type,nickname')
+            ->where('is_show',1)
+            ->where('type','article')
+            ->select()
+            ->toArray();
+        $data = [];
+        if($cat_list){
+            foreach ($cat_list as $k => $v){
+                $article_list =$article_model
+                    ->field('id,title,cat_id,created_at')
+                    ->where('cat_id',$v['id'])
+                    ->where('is_show',1)
+                    ->order('id desc')
+                    ->limit(8)
+                    ->select()
+                    ->toArray();
+                $data[$k]['cat'] = $v;
+                $data[$k]['list'] = $article_list;
+            }
+        }
 
-        $page = input('get.page',1);
-        $start = ($page-1)*20;
-        $model = model('Article');
-        $list = $model->limit($start,10)->order('id desc')->select();
-        $this->assign('list',$list);
+        $this->assign('cat_list', $data);
         return $this->view->fetch();
     }
 
-    public function detail(){
+    public function detail($id)
+    {
+        $model = model('Article');
+        $article = $model->where('id', $id)->find()->toArray();
+
+        $this->assign('article', $article);
         return $this->view->fetch();
     }
 }

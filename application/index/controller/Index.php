@@ -20,24 +20,23 @@ class Index extends Frontend
     public function index()
     {
 
+        //推荐文章
         $article_model = model('article');
-        $article_orm = $article_model->table('cs_article')
-            ->field('a.id,a.title,a.cat_id')
-            ->alias('a')
-            ->join('cs_article b', 'a.cat_id = b.cat_id AND a.id < b.id', 'LEFT')
-            ->where('a.is_show',1)
-            ->group('a.id,a.cat_id')
-            ->order('a.id desc')
-            ->having('count(b.id) < 8')
-            //->fetchSql(true)
-            ->select()
-            ->toArray();
-        $article_list = [];
-        if($article_orm){
-            $cat_ids = array_column($article_orm,'cat_id');
-        }
+        $article_list = $article_model->field('id,title')->where('cat_id',16)->limit(8)->select()->toArray();
+        $article_list2 = $article_model->field('id,title')->where('cat_id',17)->limit(8)->select()->toArray();
+        $article_list3 = $article_model->field('id,title')->where('cat_id',21)->limit(8)->select()->toArray();
+        $article_list4 = $article_model->field('id,title')->where('cat_id',22)->limit(8)->select()->toArray();
 
-        $this->assign('article_list', $article_orm);
+        //友情链接
+        $link_model = model('link');
+        $link_list = $link_model->field('title,url')->where('is_show',1)->select();
+
+        $this->assign('article_list', $article_list);
+        $this->assign('article_list1', $article_list2);
+        $this->assign('article_list2', $article_list3);
+        $this->assign('article_list3', $article_list4);
+        $this->assign('link_list', $link_list);
+
         return $this->view->fetch();
     }
 
