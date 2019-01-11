@@ -31,20 +31,24 @@
             <div class="deanmn_left">
                 <div class="listr">
                     {if condition="$cat_list"}
-                        <div class="ilist">
+                    <div class="ilist">
                         {volist name="$cat_list" id="v" key="k" mod="2"}
                         <div class="newsa {eq name="mod" value="1"}f_r{else}Left{/eq}">
                             <div class="newsa_t">
                                 <h3>{$v.cat.name}</h3>
-                                <font>{$v.cat.nickname}</font><span><a href="cat-{$v.cat.id}.html" target="_blank">更多&gt;&gt;</a></span></div>
+                                <font>{$v.cat.nickname}</font><span><a href="cat-{$v.cat.id}.html" target="_blank">更多&gt;&gt;</a></span>
+                            </div>
                             <ul>
-                            {volist name="$v.list" id="lv"}
+                                {if condition="$v.list"}
+                                {foreach $v.list as $vo}
                                 <li>
-                                    <p><a href="article-{$lv.id}.html" title="{$lv.title}">{$lv.title}</a></p>
-                                    <span>01-04</span>
+                                    <p><a href="article-{$vo.id}.html" title="{$vo.title}">{$vo.title}</a></p>
+                                    <span>{$vo.created_at|date="m-d",###}</span>
                                 </li>
-                            {/volist}
+                                {/foreach}
+                                {/if}
                             </ul>
+
                         </div>
                         {eq name="mod" value="1"}</div><div class="ilist">{/eq}
                         {/volist}

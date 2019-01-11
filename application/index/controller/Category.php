@@ -28,6 +28,10 @@ class Category extends Frontend
     }
 
     public function info(){
+        $model = model('Article');
+        $article = $model->where('id', 1)->find()->toArray();
+
+        $this->assign('article', $article);
         return $this->view->fetch();
     }
 }

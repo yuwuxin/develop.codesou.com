@@ -1171,7 +1171,8 @@ body {
 }
 
 .newsa ul {
-    padding: 10px 0
+    padding: 10px 0;
+    height: 390px;
 }
 
 .newsa li {
@@ -1201,3 +1202,9 @@ body {
     text-align: center;
     color: #999
 }
+
+.alist{width:880px; margin-bottom:10px; overflow:hidden}
+.alist ul{ padding:10px 0}
+.alist li{width:867px; height:24px; line-height:24px; padding:8px 0 8px 13px; background: url(../images/li.png) no-repeat left 16px; border-bottom: 1px dashed #ccc; display:block}
+.alist li p{width:780px; height:24px; line-height:24px; font-size:14px; color:#656464; float:left; display:block}
+.alist li span{width:87px; height:24px; line-height:24px; float:right; text-align:center; font-size:14px; color:#898989; display:block}

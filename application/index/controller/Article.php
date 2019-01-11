@@ -39,11 +39,13 @@ class Article extends Frontend
                     ->where('cat_id',$v['id'])
                     ->where('is_show',1)
                     ->order('id desc')
-                    ->limit(8)
+                    ->limit(10)
                     ->select()
                     ->toArray();
-                $data[$k]['cat'] = $v;
-                $data[$k]['list'] = $article_list;
+                if($article_list){
+                    $data[$k]['cat'] = $v;
+                    $data[$k]['list'] = $article_list;
+                }
             }
         }
 
