@@ -1,26 +1,557 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>{$site.title}</title>
-    <meta name="description" content="{$site.description}"/>
-    <meta name="keywords" content="{$site.keywords}"/>
-    <link rel="stylesheet" type="text/css" href="__STATIC__/css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="__STATIC__/css/viewthread.css"/>
-    <link rel="stylesheet" id="css_widthauto" type="text/css" href="static/css/style_2_widthauto.css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>[源码搜论坛dede模板] 橙色大气网络工作室织梦模板_源码搜论坛_免费网站源码下载! </title>
+    <link href="http://www.codesou.com/thread-34780-1-1.html" rel="canonical" />
+    <meta name="description" content="源码搜论坛,免费源码分享论坛,专注于discuz模板,织梦模板,手机网站模板,网站模板和网站源码,为广大站长提供建站教程以及插件软件等,为站长建站添动力。" />
+    <meta name="keywords" content="源码搜论坛,网站源码,源码下载,免费源码,网站模板,discuz模板,织梦模板,手机网站模板,免费模板下载,discuz建站,建站教程" />
+    <meta name="MSSmartTagsPreventParsing" content="True" />
+    <meta http-equiv="MSThemeCompatible" content="Yes" />
+    <link rel="stylesheet" type="text/css" href="static/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/viewthread.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/cc.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/goods.css" />
+    <script src="static/js/forum.js" type="text/javascript"></script>
     <script type="text/javascript" src='static/js/jquery-1.8.3.min.js'></script>
     <link rel="stylesheet" type="text/css" href="static/css/animate.min.css">
+    <style type="text/css">
+        .deansortmods {
+            width: 100%;
+            min-width: 1180px;
+            margin-bottom: 30px;
+        }
+
+        .deansmbgsd {
+            width: 100%;
+            min-width: 1180px;
+            height: 360px;
+            margin-bottom: 200px;
+            position: relative;
+            background: #07AEFC url(static/images/pattern.png) 0 0 repeat;
+        }
+
+        .deansortmains {
+            width: 1180px;
+            margin: 0 auto;
+        }
+
+        #wp {
+            width: 100%!important;
+        }
+
+        .deansucaixzbox {
+            margin: 20px 0;
+            background: #fff;
+            width: 1140px;
+            padding: 20px;
+            position: relative;
+            top: 0px;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.06);
+            border-radius: 4px;
+        }
+        .deansucaixzbox2 {
+            margin: 20px 0;
+            background: #fff;
+            width: 1140px;
+            padding: 20px;
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+            position: relative;
+            top: 0px;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.06);
+            border-radius: 4px;
+        }
+
+        .deanscbtops {}
+
+        .deansc_l {
+            float: left;
+            width: 538px;
+            padding: 5px;
+            border: 1px solid #ededed;
+        }
+
+        .deansc_l img {
+            width: 538px;
+            height: 358px;
+        }
+
+        .deansc_m {
+            float: right;
+            width: 560px;
+            height: 370px;
+        }
+
+        .deansc_m ul li {
+            height: 52px;
+            line-height: 52px;
+            border-bottom: 1px solid #ededed;
+            padding-left: 25px;
+            background: url(static/images/indicators.png) left center no-repeat;
+            overflow: hidden;
+        }
+
+        .deansc_m ul li span {
+            margin-right: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .deansc_m ul li:last-child {
+            border-bottom: 0;
+        }
+
+        .deanfabuanniu {
+            width: 110px;
+            height: 35px;
+            line-height: 35px;
+            float: left;
+            margin-right: 10px;
+            background: #07AEFC;
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .deanbbsjj {
+            display: none;
+        }
+
+        #pt .z a,
+        #pt .z {
+            color: #fff;
+        }
+
+        .ct2 .sd {
+            margin-top: 0!important;
+        }
+
+        .ct2 {
+            margin: 0;
+        }
+
+        .wp {
+            margin: 0 auto;
+        }
+
+
+    </style>
 </head>
 
-<body>
-{include file="common/header" /}
-<div class="wp"></div>
-<div class="wp mtn">
-    <!--<div class="area"><img src="static/picture/bg1.jpg" alt=""></div>-->
-</div>
+<body id="nv_forum" class="pg_viewthread" onkeydown="if(event.keyCode==27) return false;">
+{include file="common/header"}
+<div id="wp" class="wp">
+    <div class="deansortmods">
+        <div class="deansmbgsd">
+            <div class="deansortmains">
+                <div id="pt" class="bm cl" style="padding:10px 0; margin:0;">
+                    <div class="z">
+                        <a href="./" class="nvhm" title="首页">源码搜论坛</a> <em>&rsaquo;</em> <a href="http://www.codesou.com/forum.php?gid=39">站长资源</a> <em>&rsaquo;</em> <a href="http://www.codesou.com/forum-42-1.html">网页模板</a> <em>&rsaquo;</em> <a href="http://www.codesou.com/thread-34780-1-1.html">[源码搜论坛dede模板] 橙色大气网络工作室织梦模板 ...</a>
+                    </div>
+                </div>
 
+                <div class="deansucaixzbox">
+                    <div class="gw_goods_bottom">
+                        <div class="goods-social" style="float:right">
+                            <div class="fav item"><b></b><span class="fav-num">290℃</span></div>
+                            <div class="shoucang item"><b></b><a href="javascript:void(0);" onclick="AddFavorite('秀站网',location.href)">收藏</a></div>
+                            <div class="share item" id="goods_share" onmouseover="show_share()" onmouseout="hide_share()"> <b></b>分享
+                                <div class="share-w">
+                                    <div id="bdshare" class="bdshare_t  get-codes-bdshare"> <a class="bds_tsina" title="分享到新浪微博" href="#"></a> <a class="bds_tqq" title="分享到腾讯微博" href="#"></a> <a class="bds_qzone" title="分享到QQ空间" href="#"></a> <a class="bds_copy" title="复制网址" href="#"></a> </div>
+                                    <p class="gw_clear"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gw_clear"></div>
+                    </div>
+                    <div class="gw_goods_info">
+                        <div class="gw_goods_img"> <img alt="织梦自适应新闻资讯模板" src="static/picture/k63suo.jpg" width="420" height="420"> </div>
+                        <div class="gw_goods_right">
+                            <div class="goods_t"><i>推荐</i>
+                                <h1>织梦自适应新闻资讯模板</h1>
+                            </div>
+                            <dl class="xbase_item xprice">
+                                <dd class="xbase_col2"> <span class="xprice_val">&yen;299元</span> </dd>
+                                <dd class="gw_clear"></dd>
+                            </dl>
+                            <div class="gw_clear"></div>
+                            <div class="attr_all_same "> <font class="attr_same" style="">版　本：</font>
+                                <div class="catt"> <a class="cattsel" href="javascript:;">DEDECMS5.7SP2 | UTF-8版本</a> <a class="cattsel" href="javascript:;">编号：K63 </a></div>
+                                <div class="gw_clear"></div>
+                                <font class="spec_name" style="">售　后：</font>
+                                <div class="catt"> <a  href="javascript:;">免费BUG修复</a> <a  href="javascript:;">免费一次安装</a> <a href="javascript:;" >终身使用范围内指导</a> </div>
+                                <div class="gw_clear"></div>
+                                <font class="spec_name" style="">手机版：</font>
+                                <div class="catt"><a class="cattsel" href="javascript:;" title="响应式又称为自适应，会根据屏幕大小自动适应。M功能手机站是织梦系统功能，PC和WAP的URL不一致，模板分开，一个后台完成数据共享。">响应式</a><a class="cattsel" href="http://wpa.qq.com/msgrd?v=3&uin=904618281&site=qq&menu=yes" target="_blank">+99元开启手机站URL静态化</a> </div>
+                                <div class="gw_clear"></div>
+                            </div>
+                            <div class="sale">
+                                <div class="cuxiao">
+                                    <div class="pos"><em class="mai1">买赠</em>
+                                        <div class="row">
+                                            <dl class="sa2">
+                                                <dt class="manzeng" style="z-index: 1; position: static;">
+                                                    <div class="cx_n"><a href="http://wpa.qq.com/msgrd?v=3&uin=904618281&site=qq&menu=yes" target="_blank">买一套送两套模板（后台风格+会员风格）</a></div>
+                                                </dt>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="pos"><em class="zeng1">优惠</em>
+                                        <div class="row">
+                                            <dl class="sa2">
+                                                <dt class="manzeng" style="z-index: 1; position: static;">
+                                                    <div class="cx_n"><a href="http://wpa.qq.com/msgrd?v=3&uin=904618281&site=qq&menu=yes" target="_blank" >仿站200元起，送两套模板（后台风格+会员风格）</a></div>
+                                                </dt>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="pos" id="gw_weixin"><em class="zhe1">折扣</em>
+                                        <div class="row">
+                                            <dl class="sa2">
+                                                <dt class="manzeng" style="z-index: 1; position: static;">
+                                                    <div class="cx_n"><a href="http://www.xiuzhanwang.com/agent/" target="_blank">加入代理，赚钱+省钱，双管齐下</a></div>
+                                                </dt>
+                                            </dl>
+                                        </div>
+                                        <div class="gw_tips">
+                                            <div class="tipscont"><img src="static/picture/weixin.jpg" width="103" height="103" alt="扫描秀站网微信二维码立即关注"></div>
+                                        </div>
+                                    </div>
+                                    <div class="pos"><em class="jiang1">直降</em>
+                                        <div class="row">
+                                            <dl class="sa2">
+                                                <dt class="manzeng" style="z-index: 1; position: static;">
+                                                    <div class="cx_n"><a href="http://www.xiuzhanmi.com/" target="_blank">抄底价格抢注过期域名、高权重/高PR、V认证域名</a></div>
+                                                </dt>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="gw_clear"></div>
+                                </div>
+                            </div>
+                            <div class="cs_button">
+                                <a class="bt buy" href="list.html">立即购买</a>
+                                <a class="bt url" href="list.html">网址演示</a>
+                                <a class="bt pic" href="list.html">图片演示</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="deansortmains">
+            <div class="deansucaixzbox2">
+                <div class="catebg pb15">
+                    <div class="business_b">
+                        <ul>
+                            <li class="business_r">
+                                <div id="main-nav-holder">
+                                    <div id="main-nav">
+                                        <ul id="MB">
+                                            <li class="active" onclick="ThinkOver(this,0);">模板介绍</li>
+                                            <li class="normal" onclick="ThinkOver(this,1);">购买须知</li>
+                                            <li class="normal" onclick="ThinkOver(this,2);">服务保障</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="MBC0" style="min-height: 800px; display: block;">
+                                    <div class="properties">
+                                        <table cellspacing="0" cellpadding="2" width="100%" border="0">
+                                            <tbody>
+                                            <tr>
+                                                <td class="property" valign="top">模板编码&nbsp;：&nbsp;UTF-8版本</td>
+                                                <td class="property" valign="top">模板编号&nbsp;：&nbsp;K63</td>
+                                                <td class="property" valign="top">模板价格&nbsp;：&nbsp;￥299.00</td>
+                                                <td class="property" valign="top">模板等级&nbsp;：&nbsp;
+                                                    <font color="#E53E40">★★★☆☆</font>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="property" valign="top">发布时间&nbsp;：&nbsp;12-22</td>
+                                                <td class="property" valign="top">模板类型&nbsp;：&nbsp;文章/图库</td>
+                                                <td class="property" valign="top">模板大小&nbsp;：&nbsp;20 MB</td>
+                                                <td class="property" valign="top">演示网址&nbsp;：&nbsp;<a href="/plus/show.php?aid=1058" target="_blank" title="演示按钮">查看演示</a></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="zhujiad">
+                                        <a href="http://wpa.qq.com/msgrd?v=3&uin=904618281&site=qq&menu=yes" target="_blank"><img src="static/picture/agent.jpg" alt="网站模板建站招商代理，好礼送不停" /></a>
+                                    </div>
+                                    <div class="goods_descContent">
+                                        <p>
+                                        <p>
+                                            看奇闻网一个恐怖的世界奇闻异事网站，这里收集了全球最新最全的天下奇闻怪事，每一个奇奇怪怪的世界奇闻怪事背后，都有一个不可思议的真相，如果你喜欢看奇闻奇事，怪事奇闻，94677奇闻网绝对能惊爆你的眼球。
+                                            <br />
+                                            <br />
+                                            <strong>演示网址：</strong><a href="http://k63.xiuzhanwang.com" target="_blank">http://k63.xiuzhanwang.com</a></p>
+                                        <p>
+                                            网站特点：</p>
+                                        <p>
+                                            1、自适应网站结构，无需配置M功能手机站。</p>
+                                        <p>
+                                            2、百度权重4,移动权重6 高权重奇闻内容展示平台。</p>
+                                        <p>
+                                            3、提供免费一次安装和使用范围内免费指导、免费BUG修复。</p>
+                                        <div>
+                                            <br /> &nbsp;
+                                        </div>
+                                        <img alt="织梦仿看奇闻源码，织梦自适应新闻资讯模板" src="static/picture/3-1q2221q63t40.jpg" /> <img alt="织梦仿看奇闻，织梦自适应新闻资讯模板" src="static/picture/3-1q2221qf52w.jpg" /> <img alt="织梦仿看奇闻，织梦自适应新闻资讯模板" src="static/picture/3-1q2221qgs44.jpg" /> </p>
+                                    </div>
+                                    <div class="sh_title">
+                                        <h2>售后服务</h2></div>
+                                    <table class="shouhou">
+                                        <tbody>
+                                        <tr>
+                                            <td class="td" rowspan="4" width="150"><strong>售后服务范围</strong></td>
+                                            <td> 1、服务器配置及主机购买推荐</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 2、模板使用范围内问题免费咨询</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 3、模板免费一次安装，需提供FTP/MYSQL/域名（不提供服务器、远程、本地安装）</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 4、提供入门视频教程、备份教程、安全教程；</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td" rowspan="5" width="150"><strong>付费增值服务</strong></td>
+                                            <td> 1、服务器环境配置（需额外付费，￥500起）</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 2、网站搬家/复制（需额外付费，￥200起）</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 3、M功能手机站调试（需额外付费，￥500起）</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 4、网站中毒处理（需额外付费，500元/次/质保一个月）</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 5、网站日常维护/安全/管理（代发布20篇，保证安全性，800元/月）</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td"><strong>售后服务时间</strong></td>
+                                            <td><strong>周一至周五（法定节假日除外） 9:00-17:00</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td"><strong>售后联系方式</strong></td>
+                                            <td> Q&nbsp;Q：904618281 2361928288 Tel：15205695834（已购买用户，请带上你的订单截图，（盗版者勿扰）。</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td"><strong style="color:#F00">非售后服务范围</strong></td>
+                                            <td>网站误修改错误修复、网站中毒修复、版面修改、功能添加、网站安全/备份/管理/维护等</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="MBC1" style="min-height: 800px; display:none;">
+                                    <div class="goods_descContent">
+                                        <div class="tab_body">
+                                            <div class="qlist">
+                                                <font style="font-size:14px; color:#F00; text-align:center">如果您购买本模板，则表明您已经阅读并认可以下说明内容！</font>
+                                            </div>
+                                            <div class="qlist">
+                                                <div class="question"><span class="icon fl"></span><strong class="Right">你们的模板能保证和效果图一样吗？</strong></div>
+                                                <div class="answer"><span class="icon fl"></span>
+                                                    <p class="Right">嗯，对的，秀站网承诺演示效果图均和网站一模一样，如有不同，全额退款！并且我们的模板和数据都没有留后门，请放心使用！ </p>
+                                                </div>
+                                            </div>
+                                            <div class="qlist">
+                                                <div class="question"><span class="icon fl"></span> <strong class="Right">购买过的模板，想退换，可以吗？</strong></div>
+                                                <div class="answer"><span class="icon fl"></span>
+                                                    <p class="Right">因为模板具有可复制性和可传播性，模板一旦发货，非质量问题，不支持退换；所以务必请您一定看清楚后再购买；</p>
+                                                </div>
+                                            </div>
+                                            <div class="qlist">
+                                                <div class="question"><span class="icon fl"></span> <strong class="Right">购买模板对主机有要求吗？</strong></div>
+                                                <div class="answer"><span class="icon fl"></span>
+                                                    <p class="Right">DedeCMS 基于PHP和MySQL技术开发，可使用于Windows、Linux、Unix平台
+                                                        <br> 1：主机需要支持PHP，带MYSQL的主机；
+                                                        <br> 2：您的主机能否完美运行，可以先进行测试织梦默认程序，只要默认程序可以运行，就可以安装我们的模板； </p>
+                                                </div>
+                                            </div>
+                                            <div class="qlist">
+                                                <div class="question"><span class="icon fl"></span><strong class="Right">购买你们的模板有哪些服务？</strong></div>
+                                                <div class="answer"><span class="icon fl"></span>
+                                                    <p class="Right">售后服务：
+                                                        <br> 1：模板免费终身BUG修复，提供入门视频教程、备份教程、安全教程；
+                                                        <br> 2：提供免费一次安装，需提供FTP MYSQL 域名；（不提供远程、服务器、本地安装）
+                                                        <br> 3：售后指导范围（发布文档/上传图片、修改标题、修改栏目名称）；
+                                                        <br> 4：售后指导时间：周一至周五，早9：00-17：00；
+                                                        <br> 5：系统升级指导（需要客户主动联系我们，跨版本不提供升级）；
+                                                        <br> 6：使用过程中，涉及工作量的新修改需求，我们会收取辛苦费；
+                                                        <br> 7：后期对模板文件修改造成的问题、主机问题、中毒挂马等不属于免费服务范畴；
+                                                        <br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="qlist">
+                                                <div class="question"><span class="icon fl"></span> <strong class="Right">刚刚购买了一套模板，请问可以授权多少个域名呢？</strong></div>
+                                                <div class="answer"><span class="icon fl"></span>
+                                                    <p class="Right">授权说明：
+                                                        <br> 1：持有者名下域名最多授权5个；
+                                                        <br> 2：非持有者名下的域名不提供免费授权，域名信息以whois查询为准或提供域名证书；
+                                                        <br> 3：授权只是更好的保护模板不被盗版，更好为客户提供售后服务，授权过后终身使用，无远程文件调用；
+                                                        <br> 4：购买者可以多发些域名备用，如主域名、备用域名、主机临时域名、IP等；
+                                                        <br> 5：模板默认支持127.0.0.1、localhost、万网主机临时域名、西数主机临时域名； </p>
+                                                </div>
+                                            </div>
+                                            <div class="qlist">
+                                                <div class="question"><span class="icon fl"></span> <strong class="Right">响应式模板和PC+WAP（织梦M功能手机站）有什么区别？</strong></div>
+                                                <div class="answer"><span class="icon fl"></span>
+                                                    <p class="Right">
+                                                        响应式解释：也就是我们俗称的自适应，通过最新代码技术做到一个网站能够兼容多个终端，优点是用户体验好、利于移动端排名，内容维护方便；缺点就是当屏幕过小时会造成屏幕拥挤、代码累赘、对浏览器版本要求高、兼容性差；
+                                                        <br />响应式模板体验网址：<a href="http://q185.xiuzhanwang.com/" target="_blank">http://q185.xiuzhanwang.com/</a>
+                                                        <br> PC+WAP（织梦M功能手机站）解释：WAP是织梦2015年推出的手机站功能，是织梦程序的功能升级，优点是共享数据模板分离、手机站自动更新、修改简单、代码简化；缺点是提交适配麻烦、需二次修改设置子域名；
+                                                        <br>PC体验网址：<a href="http://k32.xiuzhanwang.com/" target="_blank">http://k32.xiuzhanwang.com/</a>
+                                                        <br>WAP体验网址：<a href="http://k32.xiuzhanwang.com/m" target="_blank">http://k32.xiuzhanwang.com/m</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="qlist">
+                                                <div class="question"><span class="icon fl"></span> <strong class="Right">在淘宝上和其它网站上会看到你们的模板，能购买吗？</strong></div>
+                                                <div class="answer"><span class="icon fl"></span>
+                                                    <p class="Right">秀站网一直致力于DEDE模板设计，但总有一些小人购买后进行二次贩卖获取利润，他们不提供终身技术指导和模板BUG修复，因为他们本身就不是原版设计商。我们总会接到一些客户的投诉，反映"黄牛"提供的模板不提供任何后期的技术支持导致网站不能使用。</p>
+                                                </div>
+                                            </div>
+                                            <div class="qlist">
+                                                <div class="question"><span class="icon fl"></span><strong class="Right">你们是个人还是公司？团队大概有多少人？可以开据发票吗？</strong></div>
+                                                <div class="answer"><span class="icon fl"></span>
+                                                    <p class="Right">我们是正规公司动作，隶属于合肥秀站网络科技有限公司，团队目前一直围绕在10人左右，有专职的售前、售后、和模板开发人员、插件开发人员、技术支持等，为您提供最完善的全方位服务；秀站网直接客户可开据发票（需支付6个点税及30天内提开票要求）及收据；</p>
+                                                </div>
+                                            </div>
+                                            <div class="qlist">
+                                                <div class="question"><span class="icon fl"></span><strong class="Right">为什么网上看到别人家的模板比你们的便宜很多？</strong></div>
+                                                <div class="answer"><span class="icon fl"></span>
+                                                    <p class="Right">不要以价格比产品，因为全网模板提供商都不缺产品，差的就是后期服务。
+                                                        <br> 原因1）我们是正版的模板商，所有模板都经过精心测试，保证完整无误，每套模板有配套的教程。
+                                                        <br> 原因2）我们一直在涨价，是因为我们的模板质量和系统优化一直在提升，请不要单纯的比价格，应该比它的价值。
+                                                        <br> 如果您只是单独追求便宜，不求后期保障，建议您直接通过淘宝购买盗版产品。 </p>
+                                                </div>
+                                            </div>
+                                            <div class="qlist">
+                                                <div class="question"><span class="icon fl"></span> <strong class="Right">购买模板可以免费给修改吗？</strong></div>
+                                                <div class="answer"><span class="icon fl"></span>
+                                                    <p class="Right">模板基本上全是后台控制的，90%的数据都可以通过后台修改的，我们提供的是模板使用范围内技术指导；如果涉及一定工作量的修改，我们会收取合理的修改费用；如果您能自己修改的最好自己修改，我们也不想加收您的费用，我们这边服务压力特别大，希望您能理解。</p>
+                                                </div>
+                                            </div>
+                                            <div class="qlist">
+                                                <div class="question"><span class="icon fl"></span> <strong class="Right">你们的模板兼容性怎么样？</strong></div>
+                                                <div class="answer"><span class="icon fl"></span>
+                                                    <p class="Right">根据百度大数据统计显示，IE6已经完全零市场份额，IE7/8也在逐渐下降趋势，我们的前端工程师在尽可能保证IE7/8的浏览性，但是仍然做不到百分百完美。我们只承诺兼容IE9+/Chrome/360/Firefox/搜狗等主流市场浏览器，且只能做到99%兼容性！百度大数据参考网址：<a href="http://tongji.baidu.com/data/browser" target="_blank">http://tongji.baidu.com/data/browser</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="qlist">
+                                                <div class="question"><span class="icon fl"></span><strong class="Right">你们的模板演示有部分是图片演示和说明，没看到实际效果，担心不敢买？</strong></div>
+                                                <div class="answer"><span class="icon fl"></span>
+                                                    <p class="Right">我们的演示全是模板的实际效果截图，确保为你提供模板真实效果。网上总有人想尽一切办法偷取我们的模板数据，所以没办法只能暂时采用的这种一比一截图演示方法，给您带来不便，希望能理解，我们一直在为如何让客户能感受到模板真实的效果而努力。</p>
+                                                </div>
+                                            </div>
+                                            <div class="qlist">
+                                                <div class="question"><span class="icon fl"></span><strong class="Right">模板想修改或者定制如何操作？费用一般是多少？</strong></div>
+                                                <div class="answer"><span class="icon fl"></span>
+                                                    <p class="Right">修改我们是收费的，请把修改意见整理好发我们，然后报价；一般修改价格是100元起；（最好把页面修改效果图拼出来，如果不会拼图，可以用WORD做个文档，截图配文字，尽量多用图片少用文字表达清楚）。
+                                                        <br> 模板定制相当于是量身定做，根据您的需求出效果图（或者根据您的效果图来制作），然后切图排页面、套DEDECMS系统、测兼容、调试、上演示测试、出配套教程等一系列工作。网站定制费用一般是1500起，同样网站，本地网络公司建站价格大概是我们的5-10倍，选择我们绝对物有所值。
+                                                        <br> 定制付款方式：首付50%，做好放演示，测试无误结尾款，打包交付模板和教程。定制一般多长时间好：没特殊情况一般是3-15工作日，当然项目进度也和双方的沟通是否顺畅有直接关系。
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="qlist">
+                                                <font style="font-size:14px; color:#F00; text-align:center">如果您购买本模板，则表明您已经阅读并认可以上说明内容！</font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="MBC2" style="min-height: 800px; display: none;">
+                                    <div class="goods_descContent">
+                                        <div id="advantage">
+                                            <div class="advantage">
+                                                <a href="https://koubei.baidu.com/s/www.xiuzhanwang.com" target="_blank"><img src="static/picture/youshi.jpg" alt="织梦模板，dedecms原创新闻资讯织梦模板"></a>
+                                            </div>
+                                            <div class="good_service">选择模板建站的理由</div>
+                                            <ul>
+                                                <li>
+                                                    <dl class="you_a">
+                                                        <dt>快速交付</dt>
+                                                        <dd>1个工作日上线精美网站</dd>
+                                                        <p>挑选一套最适合您的网站模板，我们会在当天安装调试交付给您，让您尽快操作后台开始建站之旅。</p>
+                                                    </dl>
+                                                </li>
+                                                <li class="rn">
+                                                    <dl class="you_b">
+                                                        <dt>精美模板</dt>
+                                                        <dd>几百套精美模板任您选</dd>
+                                                        <p>秀站网的模板追求质量与细节，代码最优，功能最强，细节把最精致，目前已经拥有了上百套各行业精品模板任您选。</p>
+                                                    </dl>
+                                                </li>
+                                                <li>
+                                                    <dl class="you_c">
+                                                        <dt>个性化调整</dt>
+                                                        <dd>模板并非人人一样</dd>
+                                                        <p>您可以给我们提交您的想法，我们的资深技术人员会为您做一些与众不同的调整，我们也会给出最合理的工期与修改费用。</p>
+                                                    </dl>
+                                                </li>
+                                                <li class="rn">
+                                                    <dl class="you_d">
+                                                        <dt>功能齐全</dt>
+                                                        <dd>拥有最为全面的网站功能</dd>
+                                                        <p>织梦是集简单、灵活、开源几大特点的开源内容管理系统,国内开源CMS的领先品牌，目前超过六成的站点正在使用织梦CMS。</p>
+                                                    </dl>
+                                                </li>
+                                                <li>
+                                                    <dl class="you_e">
+                                                        <dt>维护简单</dt>
+                                                        <dd>人性化的后台管理</dd>
+                                                        <p>设置模板，设置分类，添加内容，替换广告，几乎所有操作都在后台管理。人性化的后台操作让你上手更简单。</p>
+                                                    </dl>
+                                                </li>
+                                                <li class="rn">
+                                                    <dl class="you_f">
+                                                        <dt>第三方应用</dt>
+                                                        <dd>拥有众多第三方应用</dd>
+                                                        <p>流量统计，网页分享，快捷登陆，自动采集，全自动伪原创，多说畅言等各种评论系统都可以接入整合。</p>
+                                                    </dl>
+                                                </li>
+                                                <li>
+                                                    <dl class="you_g">
+                                                        <dt>SEO优化</dt>
+                                                        <dd>适合SEO优化的强大CMS</dd>
+                                                        <p>可以针对全网站或单个栏目和文章进行关键词设置，实现seo优化，提升网站搜索排名。</p>
+                                                    </dl>
+                                                </li>
+                                                <li class="rn">
+                                                    <dl class="you_h">
+                                                        <dt>售后服务</dt>
+                                                        <dd>秀站网品牌保障</dd>
+                                                        <p>秀站网作为织梦模板第一服务商，拥有强大的售后服务团队，为您提供全方位的售后服务。</p>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="MBC3" style="min-height: 800px; display: none;">
+                                    <div class="goods_descContent"> </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="cl">
+                        </ul>
+                    </div>
+                    <div style="height:0px; line-height:0px; clear:both;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
 {include file="common/footer"}
 </body>
+
 </html>

@@ -28,7 +28,7 @@
                         {if condition="$list"}
                         {volist name="$list" id="v" key="k"}
                         <li>
-                            <p><b> [<a href='cat-{$cat.id}.html'>{$cat.name}</a>] </b>
+                            <p><b> [<a href='list-{$cat.id}.html'>{$cat.name}</a>] </b>
                                 <a href="article-{$v.id}.html" target="_blank" title="{$v.title}">{$v.title}</a>
                             </p>
                             <span>{$v.created_at|date='Y-m-d',###}</span>

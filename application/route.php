@@ -21,6 +21,6 @@ Route::pattern([
 
 Route::rule('article','index/article/index');
 Route::rule('article-<id>','index/article/detail');
-Route::rule('cat-<id>','index/category/info');
+Route::rule('list-<id>','index/category/list');
 Route::rule('goods','index/goods/index');
 Route::rule('goods-<id>','index/goods/detail');

@@ -10,6 +10,7 @@ namespace app\index\controller;
 
 
 use app\common\controller\Frontend;
+use think\Request;
 
 class Goods extends Frontend
 {
@@ -23,8 +24,19 @@ class Goods extends Frontend
     }
 
     public function index(){
+        $request = Request::instance();
+        $catid = $request->param('catid',0);
+
         //获取数据模型
         $goods_model = model('Goods');
+        $category_model = model('Category');
+
+        //获取分类
+        $category_orms = $category_model
+            ->field('id,name')
+            ->where('type','goods')
+            ->select();
+
         //查询列表
         $goods_orms = $goods_model
             ->where('is_show',1)
@@ -33,6 +45,8 @@ class Goods extends Frontend
         //分页
         $page = $goods_orms->render();
         //模板赋值
+        $this->assign('catid',$catid);
+        $this->assign('cat_list',$category_orms);
         $this->assign('list',$goods_orms);
         $this->assign('page',$page);
         return $this->view->fetch('list');

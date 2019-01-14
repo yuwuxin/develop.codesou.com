@@ -28,7 +28,30 @@ class Category extends Frontend
         return $this->view->fetch();
     }
 
-    public function info($id)
+    public function list($id)
+    {
+        $model = model('Article');
+        $cat_model = model('Category');
+
+        $cat_orm = $cat_model->field('id,name,nickname,type,flag')
+            ->where('id', $id)
+            ->find()
+            ->toArray();
+        $art_orms = $model->field('id,title,created_at')
+            ->where('cat_id', $id)
+            ->paginate(10);
+
+        // 获取分页显示
+        $page = $art_orms->render();
+
+        $this->assign('page', $page);
+        $this->assign('cat', $cat_orm);
+        $this->assign('list', $art_orms);
+        $this->assign('left_list', $this->get_pub_left());
+        return $this->view->fetch();
+    }
+
+    public function cat($id)
     {
         $model = model('Article');
         $cat_model = model('Category');
