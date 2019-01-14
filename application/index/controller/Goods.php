@@ -23,10 +23,41 @@ class Goods extends Frontend
     }
 
     public function index(){
+        //获取数据模型
+        $goods_model = model('Goods');
+        //查询列表
+        $goods_orms = $goods_model
+            ->where('is_show',1)
+            ->order('sort desc,id desc')
+            ->paginate(20);
+        //分页
+        $page = $goods_orms->render();
+        //模板赋值
+        $this->assign('list',$goods_orms);
+        $this->assign('page',$page);
         return $this->view->fetch('list');
     }
 
-    public function detail(){
+    public function detail($id){
+        //获取数据模型
+        $goods_model = model('Goods');
+        $goods_desc_model = model('GoodsDesc');
+        //查询记录
+        $goods_orm = $goods_model
+            ->where('id',$id)
+            ->where('is_show',1)
+            ->find();
+
+        if($goods_orm){
+            //查询记录详情
+            $goods_orm['content'] = '';
+            $goods_content = $goods_desc_model->where('goods_id',$goods_orm['id'])->find();
+            if($goods_content){
+                $goods_orm['content'] = $goods_content['content'];
+            }
+        }
+
+        $this->assign('goods',$goods_orm);
         return $this->view->fetch();
     }
 }
