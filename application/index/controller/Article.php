@@ -50,6 +50,7 @@ class Article extends Frontend
         }
 
         $this->assign('cat_list', $data);
+        $this->assign('left_list', $this->get_pub_left());
         return $this->view->fetch();
     }
 
@@ -58,6 +59,7 @@ class Article extends Frontend
         $model = model('Article');
         $article = $model->where('id', $id)->find()->toArray();
 
+        $this->assign('left_list', $this->get_pub_left());
         $this->assign('article', $article);
         return $this->view->fetch();
     }

@@ -1151,6 +1151,11 @@ body {
     font-weight: normal
 }
 
+.newsa_t h2 {
+    font-weight: bold;
+    font-size:14px;
+}
+
 .newsa_t font {
     float: left;
     text-indent: 8px;
@@ -1203,8 +1208,15 @@ body {
     color: #999
 }
 
-.alist{width:880px; margin-bottom:10px; overflow:hidden}
+.alist{width:842px; margin-bottom:10px; overflow:hidden}
 .alist ul{ padding:10px 0}
-.alist li{width:867px; height:24px; line-height:24px; padding:8px 0 8px 13px; background: url(../images/li.png) no-repeat left 16px; border-bottom: 1px dashed #ccc; display:block}
-.alist li p{width:780px; height:24px; line-height:24px; font-size:14px; color:#656464; float:left; display:block}
+.alist li{width:828px; height:24px; line-height:24px; padding:8px 0 8px 13px; background: url(../images/li.png) no-repeat left 16px; border-bottom: 1px dashed #ccc; display:block}
+.alist li p{width:740px; height:24px; line-height:24px; font-size:14px; color:#656464; float:left; display:block}
 .alist li span{width:87px; height:24px; line-height:24px; float:right; text-align:center; font-size:14px; color:#898989; display:block}
+
+.pagebar{height:45px;line-height:35px;margin:0 auto; text-align:center}
+.pagebar ul{ display:inline-block; margin:0 auto}
+.pagebar li{line-height:40px; display:inline-block; font-size:14px; border:1px solid #ddd; margin-left:-1px; float:left; background-color:#FFF; cursor:pointer;}
+.pagebar li a{line-height:40px; height:40px; padding:0 15px; display:block}
+.pagebar li.thisclass, .pagebar ul li.thisclass a, .pagebar ul li.thisclass a:hover{color:#fff; background-color: #07AEFC; line-height:40px; height:40px; padding:0 15px;}
+.pagebar li span{padding:0 15px;}

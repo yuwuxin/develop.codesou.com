@@ -134,4 +134,15 @@ class Frontend extends Controller
         $this->view->config = array_merge($this->view->config ? $this->view->config : [], is_array($name) ? $name : [$name => $value]);
     }
 
+
+    public function get_pub_left(){
+        $article_model = model('Article');
+        $article_orms = $article_model->field('id,title,cover_img,click_count,summary,created_at')
+            ->where('is_show',1)
+            ->limit(10)
+            ->select()
+            ->toArray();
+        return $article_orms;
+    }
+
 }
