@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{$cat.name}-{$site.title}</title>
+    <meta name="description" content="{$site.description}" />
+    <meta name="keywords" content="{$site.keywords}" />
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/view.css" />
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/list.css" />
+</head>
+{include file="common/header" /}
+<div id="wp" class="wp">
+    <div id="ct" class="ct2 wp cl" style="width:1180px!important; margin:20px auto;">
+        <div class="mn">
+            <div class="deanwzadsd">
+                <div class="area">
+                    <img src="static/picture/ads.jpg"/>
+                </div>
+            </div>
+            <div class="deanmn_left">
+                <div class="alist">
+                    <div class="newsa_t">
+                        <h2>{$cat.name}</h2>
+                        <font></font>
+                    </div>
+                    <ul>
+                        {if condition="$list"}
+                        {volist name="$list" id="v" key="k"}
+                        <li>
+                            <p><b> [<a href='list-{$cat.id}.html'>{$cat.name}</a>] </b>
+                                <a href="article-{$v.id}.html" target="_blank" title="{$v.title}">{$v.title}</a>
+                            </p>
+                            <span>{$v.created_at|date='Y-m-d',###}</span>
+                        </li>
+                        {/volist}
+                        {/if}
+                    </ul>
+                </div>
+                <div class="pagebar">
+                    {$page}
+                </div>
+            </div>
+        </div>
+        {include file="common/left"}
+        <div class="clear"></div>
+    </div>
+</div>
+{include file="common/footer"}
+</body>
+
+</html>

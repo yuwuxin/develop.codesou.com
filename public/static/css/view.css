@@ -2210,39 +2210,39 @@ body {
 }
 
 .deanmanagerart span.deanviews {
-    background: url(static/images/view.png) left center no-repeat;
+    background: url(../images/view.png) left center no-repeat;
 }
 
 .deanmanagerart span.deanreplies {
-    background: url(static/images/reply.png) left center no-repeat;
+    background: url(../images/reply.png) left center no-repeat;
 }
 
 .deanmanagerart span.deanedit {
-    background: url(static/images/edit.png) left center no-repeat;
+    background: url(../images/edit.png) left center no-repeat;
 }
 
 .deanmanagerart span.deandelete {
-    background: url(static/images/delete.png) left center no-repeat;
+    background: url(../images/delete.png) left center no-repeat;
 }
 
 .deanmanagerart span.deanshoucang {
-    background: url(static/images/xin.png) left center no-repeat;
+    background: url(../images/xin.png) left center no-repeat;
 }
 
 .deanmanagerart span.deanfenxianga {
-    background: url(static/images/share.png) left center no-repeat;
+    background: url(../images/share.png) left center no-repeat;
 }
 
 .deanmanagerart span.deanyaoqing {
-    background: url(static/images/invite.png) left center no-repeat;
+    background: url(../images/invite.png) left center no-repeat;
 }
 
 .deanmanagerart span.deanadds {
-    background: url(static/images/add.png) left center no-repeat;
+    background: url(../images/add.png) left center no-repeat;
 }
 
 .deanmanagerart span.deanpushed {
-    background: url(static/images/cloud.png) left center no-repeat;
+    background: url(../images/cloud.png) left center no-repeat;
 }
 /*相关阅读*/
 

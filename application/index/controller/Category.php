@@ -28,7 +28,7 @@ class Category extends Frontend
         return $this->view->fetch();
     }
 
-    public function list($id)
+    public function articleList($id)
     {
         $model = model('Article');
         $cat_model = model('Category');
@@ -48,7 +48,7 @@ class Category extends Frontend
         $this->assign('cat', $cat_orm);
         $this->assign('list', $art_orms);
         $this->assign('left_list', $this->get_pub_left());
-        return $this->view->fetch();
+        return $this->view->fetch('');
     }
 
     public function cat($id)
