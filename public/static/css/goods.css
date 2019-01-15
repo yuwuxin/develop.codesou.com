@@ -98,7 +98,7 @@ i, em{font-style: normal;}
 /*大正文*/
 
 #main-nav-holder{height: 36px;}
-#main-nav{width: 1140px;background: #ffffff;border-bottom:#eeeeee 1px solid;border-top:#eeeeee 1px solid;height: 38px;}
+#main-nav{background: #ffffff;border-bottom:#eeeeee 1px solid;border-top:#eeeeee 1px solid;height: 38px;}
 
 #main-nav .boldtit_list{height: 38px;line-height: 38px;width: 100px;border-right: 1px solid #e0e0e0;float: left;text-align: center;font-size: 14px;}
 #main-nav .boldtit_list a:link{color: #4c4c4c;display: block;width: 100px;height: 40px; font-size:14px; font-weight:500;}
@@ -116,8 +116,8 @@ _top:expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ?
 z-index:999;}
 
 .business_d{width: 1210px; margin:0 auto;  background:#FFF;position: relative;}
-.business_b{width: 1140px; margin:0 auto;  background:#FFF;position: relative;}
-.business_r{width:942px; float:left;position: relative;background: #ffffff;}
+.business_b{margin:0 auto;  background:#FFF;position: relative;}
+.business_r{width:900px; float:left;position: relative;background: #ffffff;}
 
 /*新增*/
 .right_bg{display:block;width:267px;position: absolute;background: #eee;z-index: -1;top: 0;right: -268px;}

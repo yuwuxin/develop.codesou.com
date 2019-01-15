@@ -71,6 +71,7 @@ class Goods extends Frontend
             }
         }
 
+        $this->assign('left_list', $this->get_pub_left());
         $this->assign('goods',$goods_orm);
         return $this->view->fetch();
     }

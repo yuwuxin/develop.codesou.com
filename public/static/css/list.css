@@ -62,7 +62,7 @@ body {
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.06);
 }
 
-.ct2 .sd {
+.sd {
     width: 300px;
     float: right;
     overflow: visible !important;
