@@ -37,9 +37,13 @@ class Goods extends Frontend
             ->where('type','goods')
             ->select();
 
+        $map['is_show'] = 1;
+        if($catid){
+            $map['cat_id'] = $catid;
+        }
         //查询列表
         $goods_orms = $goods_model
-            ->where('is_show',1)
+            ->where($map)
             ->order('sort desc,id desc')
             ->paginate(20);
         //分页

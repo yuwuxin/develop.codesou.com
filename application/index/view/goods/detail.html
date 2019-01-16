@@ -119,9 +119,9 @@
                 <div class="deansucaixzbox">
                     <div class="gw_goods_bottom">
                         <div class="goods-social" style="float:right">
-                            <div class="fav item"><b></b><span class="fav-num">290℃</span></div>
-                            <div class="shoucang item"><b></b><a href="javascript:void(0);" onclick="AddFavorite('秀站网',location.href)">收藏</a></div>
-                            <div class="share item" id="goods_share" onmouseover="show_share()" onmouseout="hide_share()"> <b></b>分享
+                            <div class="fav item"><b></b><span class="fav-num">{$goods.click_count}℃</span></div>
+                            <div class="shoucang item"><b></b><a href="javascript:void(0);" >收藏</a></div>
+                            <div class="share item"> <b></b>分享
                                 <div class="share-w">
                                     <div id="bdshare" class="bdshare_t  get-codes-bdshare"> <a class="bds_tsina" title="分享到新浪微博" href="#"></a> <a class="bds_tqq" title="分享到腾讯微博" href="#"></a> <a class="bds_qzone" title="分享到QQ空间" href="#"></a> <a class="bds_copy" title="复制网址" href="#"></a> </div>
                                     <p class="gw_clear"></p>
@@ -137,18 +137,18 @@
                                 <h1>{$goods.goods_name}</h1>
                             </div>
                             <dl class="xbase_item xprice">
-                                <dd class="xbase_col2"> <span class="xprice_val">&yen;299元</span> </dd>
+                                <dd class="xbase_col2"> {if condition="$goods.shop_price gt 0"}<span class="xprice_val">&yen;{$goods.shop_price}元</span>{else}<span class="fprice_val">免费</span>{/if}</dd>
                                 <dd class="gw_clear"></dd>
                             </dl>
                             <div class="gw_clear"></div>
                             <div class="attr_all_same "> <font class="attr_same" style="">版　本：</font>
-                                <div class="catt"> <a class="cattsel" href="javascript:;">DEDECMS5.7SP2 | UTF-8版本</a> <a class="cattsel" href="javascript:;">编号：K63 </a></div>
+                                <div class="catt"> <a class="cattsel" href="javascript:;">DEDECMS5.7SP2 | {$goods.code}</a> <a class="cattsel" href="javascript:;">编号：{$goods.goods_sn} </a></div>
                                 <div class="gw_clear"></div>
                                 <font class="spec_name" style="">售　后：</font>
                                 <div class="catt"> <a  href="javascript:;">免费BUG修复</a> <a  href="javascript:;">免费一次安装</a> <a href="javascript:;" >终身使用范围内指导</a> </div>
                                 <div class="gw_clear"></div>
                                 <font class="spec_name" style="">手机版：</font>
-                                <div class="catt"><a class="cattsel" href="javascript:;" title="响应式又称为自适应，会根据屏幕大小自动适应。M功能手机站是织梦系统功能，PC和WAP的URL不一致，模板分开，一个后台完成数据共享。">响应式</a><a class="cattsel" href="http://wpa.qq.com/msgrd?v=3&uin=904618281&site=qq&menu=yes" target="_blank">+99元开启手机站URL静态化</a> </div>
+                                <div class="catt"><a class="cattsel" href="javascript:;" title="响应式又称为自适应，会根据屏幕大小自动适应。M功能手机站是织梦系统功能，PC和WAP的URL不一致，模板分开，一个后台完成数据共享。">响应式</a><a class="cattsel" href="http://wpa.qq.com/msgrd?v=3&uin={$site.kfqq}&site=qq&menu=yes" target="_blank">+99元开启手机站URL静态化</a> </div>
                                 <div class="gw_clear"></div>
                             </div>
                             <div class="sale">
@@ -157,7 +157,7 @@
                                         <div class="row">
                                             <dl class="sa2">
                                                 <dt class="manzeng" style="z-index: 1; position: static;">
-                                                    <div class="cx_n"><a href="http://wpa.qq.com/msgrd?v=3&uin=904618281&site=qq&menu=yes" target="_blank">买一套送两套模板（后台风格+会员风格）</a></div>
+                                                    <div class="cx_n"><a href="http://wpa.qq.com/msgrd?v=3&uin={$site.kfqq}&site=qq&menu=yes" target="_blank">买一套送两套模板（后台风格+会员风格）</a></div>
                                                 </dt>
                                             </dl>
                                         </div>
@@ -166,7 +166,7 @@
                                         <div class="row">
                                             <dl class="sa2">
                                                 <dt class="manzeng" style="z-index: 1; position: static;">
-                                                    <div class="cx_n"><a href="http://wpa.qq.com/msgrd?v=3&uin=904618281&site=qq&menu=yes" target="_blank" >仿站200元起，送两套模板（后台风格+会员风格）</a></div>
+                                                    <div class="cx_n"><a href="http://wpa.qq.com/msgrd?v=3&uin={$site.kfqq}&site=qq&menu=yes" target="_blank" >仿站200元起，送两套模板（后台风格+会员风格）</a></div>
                                                 </dt>
                                             </dl>
                                         </div>
@@ -193,9 +193,9 @@
                                 </div>
                             </div>
                             <div class="cs_button">
-                                <a class="bt buy" href="list.html">立即购买</a>
-                                <a class="bt url" href="list.html">网址演示</a>
-                                <a class="bt pic" href="list.html">图片演示</a>
+                                <a class="bt buy" href="javascript:void(alert('功能开发中！'));">立即购买</a>
+                                <a class="bt url" href="javascript:void(alert('功能开发中！'));">网址演示</a>
+                                <a class="bt pic" href="javascript:void(alert('功能开发中！'));">图片演示</a>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -224,40 +224,26 @@
                                             <tbody>
                                             <tr>
                                                 <td class="property" valign="top">模板编码&nbsp;：&nbsp;UTF-8版本</td>
-                                                <td class="property" valign="top">模板编号&nbsp;：&nbsp;K63</td>
-                                                <td class="property" valign="top">模板价格&nbsp;：&nbsp;￥299.00</td>
+                                                <td class="property" valign="top">模板编号&nbsp;：&nbsp;{$goods.goods_sn}</td>
+                                                <td class="property" valign="top">模板价格&nbsp;：&nbsp;￥{$goods.shop_price}</td>
                                                 <td class="property" valign="top">模板等级&nbsp;：&nbsp;
                                                     <font color="#E53E40">★★★☆☆</font>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="property" valign="top">发布时间&nbsp;：&nbsp;12-22</td>
+                                                <td class="property" valign="top">发布时间&nbsp;：&nbsp;{$goods.created_at|date="Y-m-d",###}</td>
                                                 <td class="property" valign="top">模板类型&nbsp;：&nbsp;文章/图库</td>
-                                                <td class="property" valign="top">模板大小&nbsp;：&nbsp;20 MB</td>
-                                                <td class="property" valign="top">演示网址&nbsp;：&nbsp;<a href="/plus/show.php?aid=1058" target="_blank" title="演示按钮">查看演示</a></td>
+                                                <td class="property" valign="top">模板大小&nbsp;：&nbsp;{$goods.goods_size}MB</td>
+                                                <td class="property" valign="top">演示网址&nbsp;：&nbsp;<a href="javascript:void(alert('功能开发中！'));" target="_blank" title="演示按钮">查看演示</a></td>
                                             </tr>
                                             </tbody>
                                         </table>
                                     </div>
                                     <div class="zhujiad">
-                                        <a href="http://wpa.qq.com/msgrd?v=3&uin=904618281&site=qq&menu=yes" target="_blank"><img src="static/picture/agent.jpg" alt="网站模板建站招商代理，好礼送不停" /></a>
+                                        <a href="http://wpa.qq.com/msgrd?v=3&uin={$site.kfqq}&site=qq&menu=yes" target="_blank"><img src="static/picture/agent.jpg" alt="网站模板建站招商代理，好礼送不停" /></a>
                                     </div>
                                     <div class="goods_descContent">
-                                        <p>
-                                        <p>
-                                            看奇闻网一个恐怖的世界奇闻异事网站，这里收集了全球最新最全的天下奇闻怪事，每一个奇奇怪怪的世界奇闻怪事背后，都有一个不可思议的真相，如果你喜欢看奇闻奇事，怪事奇闻，94677奇闻网绝对能惊爆你的眼球。
-                                            <br />
-                                            <br />
-                                            <strong>演示网址：</strong><a href="http://k63.xiuzhanwang.com" target="_blank">http://k63.xiuzhanwang.com</a></p>
-                                        <p>
-                                            网站特点：</p>
-                                        <p>
-                                            1、自适应网站结构，无需配置M功能手机站。</p>
-                                        <p>
-                                            2、百度权重4,移动权重6 高权重奇闻内容展示平台。</p>
-                                        <p>
-                                            3、提供免费一次安装和使用范围内免费指导、免费BUG修复。</p>
-
+                                        {$goods.content}
                                     </div>
                                     <div class="sh_title">
                                         <h2>售后服务</h2></div>
@@ -298,7 +284,7 @@
                                         </tr>
                                         <tr>
                                             <td class="td"><strong>售后联系方式</strong></td>
-                                            <td> Q&nbsp;Q：904618281 2361928288 Tel：15205695834（已购买用户，请带上你的订单截图，（盗版者勿扰）。</td>
+                                            <td> Q&nbsp;Q：{$site.kfqq}  Tel：{$site.tel}（已购买用户，请带上你的订单截图，（盗版者勿扰）。</td>
                                         </tr>
                                         <tr>
                                             <td class="td"><strong style="color:#F00">非售后服务范围</strong></td>

@@ -338,6 +338,14 @@ i, em {
     zoom: 1;
 }
 
+.fprice_val {
+    float: left;
+    display: inline;
+    margin: 0 10px 0 0;
+    font-size: 28px;
+    color: #71cd9c;
+}
+
 .xprice_val {
     float: left;
     display: inline;
