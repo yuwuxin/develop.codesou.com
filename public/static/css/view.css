@@ -730,10 +730,6 @@
     text-overflow: ellipsis;
 }
 
-body {
-    background: #f4f4f4 !important;
-}
-
 .deansideboxes {
     width: 160px;
     height: 190px;
